@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ulyana Viktyuk — Marketing Manager · Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy:     #0C2044;
+  --navy-mid: #14305C;
+  --navy-lt:  #1E3A6E;
+  --gold:     #A8862A;
+  --gold-l:   #C8A84A;
+  --gold-xl:  #E2C878;
+  --linen:    #F2F0EA;
+  --linen-d:  #E8E5DC;
+  --white:    #FFFFFF;
+  --card:     #FAFAF8;
+  --slate:    #4E5C70;
+  --mist:     #8A96A8;
+  --border:   rgba(12,32,68,0.09);
+  --border-m: rgba(12,32,68,0.16);
+  --teal:     #0E6E6E;
+  --red:      #B82028;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: 'Inter', sans-serif; background: var(--linen); color: var(--navy); line-height: 1.7; font-weight: 300; -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; color: inherit; }
+
+/* ── NAV ──────────────────────────────────────────────────────────────────── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: rgba(12,32,68,0.97); backdrop-filter: blur(14px);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 56px; height: 58px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.nav-name { color: var(--gold-l); font-size: 11px; letter-spacing: 0.18em; font-weight: 500; text-transform: uppercase; }
+.nav-links { display: flex; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.45); font-size: 11px; letter-spacing: 0.09em;
+  text-transform: uppercase; padding: 0 16px; transition: color 0.2s;
+  line-height: 58px; display: block; font-weight: 400;
+}
+.nav-links a:hover { color: var(--gold-l); }
+
+/* ── SHARED ───────────────────────────────────────────────────────────────── */
+.wrap { max-width: 1320px; margin: 0 auto; padding: 100px 72px; }
+.wrap-sm { max-width: 1320px; margin: 0 auto; padding: 0 72px 72px; }
+.sec-tag {
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 12px; font-weight: 500;
+  display: flex; align-items: center; gap: 10px;
+}
+.sec-tag::after { content: ''; width: 40px; height: 1px; background: var(--gold); opacity: 0.4; }
+h2 { font-family: 'Lora', serif; font-size: clamp(28px, 3.2vw, 46px); font-weight: 400; line-height: 1.15; margin-bottom: 16px; }
+h2 em { font-style: italic; color: var(--gold-l); }
+.lead { font-size: 15px; color: var(--slate); max-width: 640px; line-height: 1.9; margin-bottom: 52px; font-weight: 300; }
+.gold-bar { width: 40px; height: 2px; background: var(--gold); margin-bottom: 28px; }
+.pill { border: 1px solid rgba(255,255,255,0.2); border-radius: 100px; padding: 5px 14px; font-size: 10px; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); text-transform: uppercase; }
+.tag { display: inline-block; background: var(--linen); border: 1px solid var(--border-m); border-radius: 4px; padding: 3px 10px; font-size: 10px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--mist); margin: 2px; }
+
+/* ── HERO ─────────────────────────────────────────────────────────────────── */
+.hero {
+  background: var(--navy); min-height: 100vh;
+  display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+  padding: 80px 72px; gap: 80px; position: relative; overflow: hidden;
+}
+.hero::after {
+  content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 50%;
+  background: linear-gradient(135deg, transparent 30%, rgba(168,134,42,0.04) 100%);
+  border-left: 1px solid rgba(168,134,42,0.1);
+  pointer-events: none;
+}
+.hero-left { position: relative; z-index: 1; }
+.hero-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-l); margin-bottom: 24px; display: flex; align-items: center; gap: 12px; font-weight: 500; }
+.hero-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--gold-l); }
+.hero h1 { font-family: 'Lora', serif; font-size: clamp(40px, 4.5vw, 68px); color: #fff; font-weight: 400; line-height: 1.08; margin-bottom: 12px; }
+.hero h1 em { font-style: italic; color: var(--gold-l); }
+.hero-sub { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 30px; font-weight: 400; }
+.hero-desc { font-size: 15px; color: rgba(255,255,255,0.48); line-height: 1.9; max-width: 440px; margin-bottom: 40px; font-weight: 300; }
+.hero-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 44px; }
+.hero-contact { font-size: 13px; color: rgba(255,255,255,0.35); display: flex; flex-wrap: wrap; gap: 4px 0; }
+.hero-contact a { color: var(--gold-l); border-bottom: 1px solid rgba(200,168,74,0.3); padding-bottom: 1px; transition: border-color 0.2s; }
+.hero-contact a:hover { border-color: var(--gold-l); }
+.hero-contact .sep { margin: 0 10px; }
+.hero-right { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; position: relative; z-index: 1; }
+.hstat { border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 26px 22px; background: rgba(255,255,255,0.03); }
+.hstat-num { font-family: 'Lora', serif; font-size: 34px; color: #fff; line-height: 1; margin-bottom: 6px; }
+.hstat-num span { color: var(--gold-l); }
+.hstat-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.32); margin-bottom: 8px; }
+.hstat-desc { font-size: 12px; color: rgba(255,255,255,0.38); line-height: 1.6; }
+
+/* ── PHOTO PLACEHOLDER ────────────────────────────────────────────────────── */
+.photo-placeholder {
+  width: 100%; height: 100%; min-height: 220px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(168,134,42,0.08) 100%);
+  border: 1px dashed rgba(168,134,42,0.3);
+  border-radius: 10px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  grid-column: 1 / -1;
+}
+.photo-placeholder svg { width: 48px; height: 48px; opacity: 0.25; }
+.photo-placeholder span { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.25); }
+
+/* ── STATS BAR ────────────────────────────────────────────────────────────── */
+.stats-bar { background: var(--gold); display: grid; grid-template-columns: repeat(4, 1fr); }
+.sbar { padding: 36px 32px; border-right: 1px solid rgba(255,255,255,0.2); }
+.sbar:last-child { border-right: none; }
+.sbar-num { font-family: 'Lora', serif; font-size: 34px; color: #fff; line-height: 1; margin-bottom: 4px; }
+.sbar-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+
+/* ── PORTFOLIO CARDS ──────────────────────────────────────────────────────── */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.grid-auto { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+
+.card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden; display: flex; flex-direction: column;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(12,32,68,0.09); }
+.card-featured { border: 2px solid var(--navy); }
+
+.card-mock {
+  background: var(--navy); height: 180px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden; flex-shrink: 0;
+}
+.card-mock.gold-bg { background: linear-gradient(135deg, var(--navy-mid), #1a3060); }
+.card-mock.alt-bg  { background: linear-gradient(135deg, #1E3A6E, #0C2044); }
+.card-mock-inner {
+  width: 74%; height: 74%; background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center; padding: 14px;
+}
+.card-mock-txt { font-family: 'Lora', serif; font-size: 12px; color: rgba(255,255,255,0.5); text-align: center; letter-spacing: 0.04em; line-height: 1.6; }
+.card-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+.card-cat { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; font-weight: 500; }
+.card h3 { font-size: 15px; font-weight: 500; margin-bottom: 9px; line-height: 1.4; color: var(--navy); }
+.card-desc { font-size: 13px; color: var(--slate); line-height: 1.7; flex: 1; }
+.card-obj { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 12px; color: var(--mist); }
+.card-obj strong { color: var(--gold); font-weight: 500; }
+
+/* ── DARK SECTION ─────────────────────────────────────────────────────────── */
+.dark { background: var(--navy); }
+.dark .sec-tag { color: var(--gold-l); }
+.dark .sec-tag::after { background: var(--gold-l); }
+.dark h2 { color: #fff; }
+.dark .lead { color: rgba(255,255,255,0.45); }
+.dark .gold-bar { background: var(--gold-l); }
+.dk-card { border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 28px 24px; background: rgba(255,255,255,0.03); position: relative; overflow: hidden; }
+.dk-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--gold), transparent); }
+.dk-card-num { font-family: 'Lora', serif; font-size: 32px; color: #fff; margin-bottom: 4px; line-height: 1; }
+.dk-card-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-l); margin-bottom: 10px; }
+.dk-card-desc { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; }
+.dk-email-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 22px; }
+.dk-email-cat { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-l); margin-bottom: 8px; }
+.dk-email-card h3 { font-size: 15px; font-weight: 500; color: #fff; margin-bottom: 9px; line-height: 1.4; }
+.dk-email-card p { font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; }
+.dk-email-obj { margin-top: 12px; font-size: 12px; color: rgba(255,255,255,0.22); }
+.dk-email-obj span { color: var(--gold-l); }
+
+/* ── AB TESTING ───────────────────────────────────────────────────────────── */
+.ab-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.ab-col-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding-bottom: 8px; border-bottom: 2px solid; margin-bottom: 14px; }
+.ab-col-label.variant-a { color: var(--teal); border-color: rgba(14,110,110,0.25); }
+.ab-col-label.variant-b { color: var(--red); border-color: rgba(184,32,40,0.2); }
+.ab-col-label.framework { color: var(--gold); border-color: rgba(168,134,42,0.3); }
+.ab-item { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 10px; }
+.ab-item:last-child { margin-bottom: 0; }
+.ab-headline { font-size: 13px; font-weight: 500; color: var(--navy); margin-bottom: 4px; line-height: 1.4; }
+.ab-note { font-size: 11px; color: var(--mist); }
+.ab-framework-item { margin-bottom: 14px; }
+.ab-framework-item:last-child { margin-bottom: 0; }
+.ab-fw-title { font-size: 12px; font-weight: 500; color: var(--navy); margin-bottom: 2px; }
+.ab-fw-desc { font-size: 11px; color: var(--mist); }
+
+/* ── INLINE STATS ─────────────────────────────────────────────────────────── */
+.inline-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; background: var(--border); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; margin-bottom: 52px; }
+.istat { background: var(--white); padding: 28px 22px; }
+.istat-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist); margin-bottom: 6px; }
+.istat-num { font-family: 'Lora', serif; font-size: 34px; color: var(--navy); line-height: 1; margin-bottom: 6px; }
+.istat-num span { color: var(--gold); font-size: 20px; }
+.istat-desc { font-size: 12px; color: var(--slate); line-height: 1.6; }
+
+/* ── ROLE SECTION ─────────────────────────────────────────────────────────── */
+.role-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.impact-item { padding: 14px 16px; background: var(--white); border: 1px solid var(--border); border-radius: 10px; border-left: 3px solid var(--gold); font-size: 13px; color: var(--navy); line-height: 1.6; margin-bottom: 10px; }
+.impact-item:last-child { margin-bottom: 0; }
+.cap-item { padding: 14px 16px; background: var(--white); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; }
+.cap-item:last-child { margin-bottom: 0; }
+.cap-title { font-size: 12px; font-weight: 500; color: var(--navy); margin-bottom: 4px; }
+.cap-desc { font-size: 12px; color: var(--slate); }
+.exp-item { padding: 22px 0; border-bottom: 1px solid var(--border); }
+.exp-item:last-child { border-bottom: none; padding-bottom: 0; }
+.exp-role { font-size: 14px; font-weight: 500; color: var(--navy); margin-bottom: 2px; }
+.exp-company { font-size: 12px; color: var(--gold); margin-bottom: 2px; font-weight: 500; }
+.exp-date { font-size: 11px; color: var(--mist); margin-bottom: 10px; font-style: italic; }
+.exp-bullet { font-size: 12px; color: var(--slate); line-height: 1.6; padding-left: 12px; border-left: 2px solid var(--border); margin-bottom: 6px; }
+.exp-bullet:last-child { margin-bottom: 0; }
+
+/* ── PLATFORM CARDS ───────────────────────────────────────────────────────── */
+.platform-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.platform-mock { background: var(--linen-d); height: 130px; display: flex; align-items: center; justify-content: center; }
+.platform-mock-inner { width: 70%; height: 70%; background: var(--white); border: 1px solid var(--border-m); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+.platform-mock-txt { font-family: 'Lora', serif; font-size: 13px; color: var(--navy); font-style: italic; }
+.platform-body { padding: 22px; }
+.platform-type { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.platform-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; color: var(--navy); }
+.platform-card p { font-size: 13px; color: var(--slate); line-height: 1.7; margin-bottom: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* ── APPROACH ─────────────────────────────────────────────────────────────── */
+.approach-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; }
+.approach-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 28px 22px; }
+.approach-icon { font-size: 18px; margin-bottom: 14px; display: block; }
+.approach-card h3 { font-size: 14px; font-weight: 500; margin-bottom: 8px; color: var(--navy); }
+.approach-card p { font-size: 12px; color: var(--slate); line-height: 1.7; }
+
+/* ── EDUCATION ────────────────────────────────────────────────────────────── */
+.edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.edu-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 24px 22px; display: flex; gap: 16px; align-items: flex-start; transition: box-shadow 0.2s; }
+.edu-card:hover { box-shadow: 0 6px 24px rgba(12,32,68,0.08); }
+.edu-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.edu-degree { font-size: 14px; font-weight: 500; color: var(--navy); margin-bottom: 3px; line-height: 1.3; }
+.edu-school { font-size: 12px; color: var(--gold); font-weight: 500; }
+
+/* ── FOOTER ───────────────────────────────────────────────────────────────── */
+footer { background: var(--navy); padding: 60px 72px; display: flex; align-items: center; justify-content: space-between; }
+.footer-name { font-family: 'Lora', serif; font-size: 22px; color: rgba(255,255,255,0.8); margin-bottom: 4px; }
+.footer-title { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.28); }
+.footer-right { text-align: right; }
+.footer-right a { color: var(--gold-l); font-size: 13px; display: block; margin-bottom: 4px; }
+.footer-copy { font-size: 11px; color: rgba(255,255,255,0.18); margin-top: 10px; }
+
+/* ── SCROLL DOTS ──────────────────────────────────────────────────────────── */
+.scroll-nav { position: fixed; right: 22px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 150; }
+.sdot { width: 6px; height: 6px; border-radius: 50%; background: rgba(12,32,68,0.18); transition: background 0.2s, transform 0.2s; cursor: pointer; }
+.sdot.active { background: var(--gold); transform: scale(1.4); }
+
+/* ── SECTION DIVIDER ──────────────────────────────────────────────────────── */
+.divider { height: 1px; background: var(--border); margin: 0 72px; }
+
+/* ── REVEAL ───────────────────────────────────────────────────────────────── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  nav { padding: 0 28px; }
+  .wrap, .wrap-sm { padding-left: 40px; padding-right: 40px; }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .inline-stats { grid-template-columns: repeat(2, 1fr); }
+  .ab-grid { grid-template-columns: 1fr 1fr; }
+  footer { padding: 48px 40px; }
+  .divider { margin: 0 40px; }
+}
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .nav-links { display: none; }
+  .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; }
+  .hero-right { display: none; }
+  .wrap, .wrap-sm { padding: 64px 24px; }
+  .wrap-sm { padding-top: 0; }
+  .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .stats-bar { grid-template-columns: 1fr 1fr; }
+  .inline-stats { grid-template-columns: 1fr 1fr; }
+  .ab-grid { grid-template-columns: 1fr; }
+  .role-grid { grid-template-columns: 1fr; gap: 40px; }
+  footer { flex-direction: column; gap: 24px; padding: 48px 24px; text-align: center; }
+  .footer-right { text-align: center; }
+  .divider { margin: 0 24px; }
+  .scroll-nav { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────────────────────────── -->
+<nav>
+  <span class="nav-name">Ulyana Viktyuk · Portfolio</span>
+  <ul class="nav-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#digital">Digital</a></li>
+    <li><a href="#social">Social</a></li>
+    <li><a href="#email">Email</a></li>
+    <li><a href="#print">Print &amp; Campaigns</a></li>
+    <li><a href="#landing">Landing Pages</a></li>
+    <li><a href="#role">Role &amp; Experience</a></li>
+  </ul>
+</nav>
+
+<!-- ── SCROLL DOTS ──────────────────────────────────────────────────────────── -->
+<div class="scroll-nav" id="scrollNav">
+  <div class="sdot" data-target="overview"></div>
+  <div class="sdot" data-target="digital"></div>
+  <div class="sdot" data-target="social"></div>
+  <div class="sdot" data-target="email"></div>
+  <div class="sdot" data-target="print"></div>
+  <div class="sdot" data-target="landing"></div>
+  <div class="sdot" data-target="role"></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- HERO -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<section class="hero" id="overview">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Marketing Manager · Industrial Real Estate</div>
+    <h1>Brand, Growth<br>&amp; <em>Campaign Strategy</em></h1>
+    <p class="hero-sub">Real Estate · Brand Identity · Performance Marketing · Project Execution</p>
+    <p class="hero-desc">Strategic and hands-on marketing manager with deep expertise in real estate project marketing, brand guardianship, and full-cycle campaign execution. PMP-certified. Highly creative with a rigorous eye for visual identity and quality across all marketing touchpoints.</p>
+    <div class="hero-pills">
+      <span class="pill">Project Marketing</span>
+      <span class="pill">Brand Strategy</span>
+      <span class="pill">Performance Marketing</span>
+      <span class="pill">Campaign Execution</span>
+      <span class="pill">CRM &amp; Email</span>
+      <span class="pill">Adobe Creative Suite</span>
+      <span class="pill">PMP-Certified</span>
+    </div>
+    <div class="hero-contact">
+      <a href="mailto:ulyana.viktyuk@gmail.com">ulyana.viktyuk@gmail.com</a>
+      <span class="sep">·</span>
+      <a href="https://linkedin.com/in/ulyanaviktyuk">linkedin.com/in/ulyanaviktyuk</a>
+      <span class="sep">·</span>
+      <span>416-720-8886</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hstat">
+      <div class="hstat-label">ROAS Improvement</div>
+      <div class="hstat-num">42<span>%</span></div>
+      <div class="hstat-desc">$1M+ performance budget across Google Ads, Meta &amp; Display with disciplined A/B testing</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-label">YoY Conversion Growth</div>
+      <div class="hstat-num">35<span>%</span></div>
+      <div class="hstat-desc">Full-funnel optimisation across integrated campaigns and owned &amp; paid channels</div>
+    </div>
+    <div class="hstat">
+      <div class="hstat-label">Monthly Sessions</div>
+      <div class="hstat-num">2.4<span>M</span></div>
+      <div class="hstat-desc">3 real estate platforms — B2B agents &amp; B2C buyers on $1B+ transaction pipeline</div>
+    </div>
+    <div class="photo-placeholder">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="color:rgba(200,168,74,0.5)">
+        <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+      </svg>
+      <span>Profile Photo</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS BAR ──────────────────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="sbar"><div class="sbar-num">2.4M</div><div class="sbar-label">Monthly sessions — 3 platforms</div></div>
+  <div class="sbar"><div class="sbar-num">42%</div><div class="sbar-label">ROAS improvement — $1M+ budget</div></div>
+  <div class="sbar"><div class="sbar-num">400+</div><div class="sbar-label">Brokers &amp; agent partners</div></div>
+  <div class="sbar"><div class="sbar-num">100K+</div><div class="sbar-label">Subscriber email database</div></div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- 01 DIGITAL ECOSYSTEM -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div id="digital" style="background: var(--linen);">
+  <div class="wrap reveal">
+    <div class="sec-tag">01 — Digital Ecosystem &amp; Website Portfolio</div>
+    <h2>Strategic <em>Platform Leadership</em></h2>
+    <div class="gold-bar"></div>
+    <p class="lead">Founding marketing leader and architect of a multi-platform growth engine — building brand infrastructure, demand generation systems, and MarTech operations from inception to scale. 2M+ registered users, 2.4M monthly sessions, and $1B+ in annual transaction volume across three platforms serving B2B agents and B2C buyers.</p>
+
+    <!-- Platform Cards -->
+    <div class="grid-3" style="margin-bottom: 52px;">
+      <div class="platform-card">
+        <div class="platform-mock"><div class="platform-mock-inner"><div class="platform-mock-txt">Property.ca</div></div></div>
+        <div class="platform-body">
+          <div class="platform-type">B2B + B2C Platform</div>
+          <h3>Property.ca</h3>
+          <p>Flagship real estate brokerage platform — built brand identity, UX systems, and demand generation engine from founding stage to national scale.</p>
+          <div class="chips">
+            <span class="tag">Brand Identity</span><span class="tag">CMS</span><span class="tag">SEO</span><span class="tag">Performance Marketing</span>
+          </div>
+        </div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-mock"><div class="platform-mock-inner"><div class="platform-mock-txt">Condos.ca</div></div></div>
+        <div class="platform-body">
+          <div class="platform-type">B2C Buyer Platform</div>
+          <h3>Condos.ca</h3>
+          <p>Consumer-facing condo search platform — governed visual standards, listing page templates, and editorial content strategy driving 2.4M monthly sessions.</p>
+          <div class="chips">
+            <span class="tag">Landing Pages</span><span class="tag">Email Marketing</span><span class="tag">GA4</span><span class="tag">Looker Studio</span>
+          </div>
+        </div>
+      </div>
+      <div class="platform-card">
+        <div class="platform-mock"><div class="platform-mock-inner"><div class="platform-mock-txt">MrLoft.ca</div></div></div>
+        <div class="platform-body">
+          <div class="platform-type">Luxury Niche Platform</div>
+          <h3>MrLoft.ca</h3>
+          <p>Premium loft and boutique condo platform — developed distinct brand identity, curated editorial content, and agent co-marketing collateral.</p>
+          <div class="chips">
+            <span class="tag">Brand Governance</span><span class="tag">Figma</span><span class="tag">InDesign</span><span class="tag">Content Strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Approach Cards -->
+    <div class="approach-grid">
+      <div class="approach-card">
+        <span class="approach-icon">📐</span>
+        <h3>Brand Architecture</h3>
+        <p>Developed distinct visual identity systems across 3 simultaneous platforms — ensuring brand differentiation while maintaining quality standards.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-icon">🎯</span>
+        <h3>Demand Generation</h3>
+        <p>Built omnichannel acquisition systems across paid, owned, and earned media aligned to sales and leasing lifecycle objectives.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-icon">⚙️</span>
+        <h3>MarTech &amp; CMS</h3>
+        <p>Managed and evolved custom CMS platforms — built scalable templates and toolkits reducing campaign production timelines by 40%.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-icon">📊</span>
+        <h3>Analytics &amp; Optimisation</h3>
+        <p>Continuous performance tracking via GA4, Looker Studio, and CRM analytics — informing every creative and strategic decision.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-icon">🤖</span>
+        <h3>AI-Enabled Operations</h3>
+        <p>Integrated AI-driven workflows into marketing operations — maintaining brand standards while dramatically increasing production velocity.</p>
+      </div>
+      <div class="approach-card">
+        <span class="approach-icon">🏢</span>
+        <h3>$1B+ Pipeline Supported</h3>
+        <p>Marketing infrastructure supporting $1B+ in annual real estate transaction volume across B2B and B2C channels simultaneously.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- 02 SOCIAL MEDIA -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div id="social" style="background: var(--card);">
+  <div class="wrap reveal">
+    <div class="sec-tag">02 — Social Media Strategy &amp; Execution</div>
+    <h2>Social Media <em>Content Ecosystem</em></h2>
+    <div class="gold-bar"></div>
+    <p class="lead">Led social media content strategy and creative production for Property.ca and Condos.ca — developing high-performing campaigns to build brand awareness, support agent growth, and drive platform engagement across Instagram, Facebook, LinkedIn, and TikTok.</p>
+
+    <div class="inline-stats">
+      <div class="istat">
+        <div class="istat-label">Posts Created</div>
+        <div class="istat-num">10K<span>+</span></div>
+        <div class="istat-desc">Across all platforms — property, agent, event &amp; seasonal</div>
+      </div>
+      <div class="istat">
+        <div class="istat-label">Monthly Users</div>
+        <div class="istat-num">2M<span>+</span></div>
+        <div class="istat-desc">Supported via social content and campaigns</div>
+      </div>
+      <div class="istat">
+        <div class="istat-label">Agents Supported</div>
+        <div class="istat-num">400<span>+</span></div>
+        <div class="istat-desc">Branded marketing assets and personal brand systems</div>
+      </div>
+      <div class="istat">
+        <div class="istat-label">Network Growth</div>
+        <div class="istat-num">30<span> → 400+</span></div>
+        <div class="istat-desc">Agent recruitment via social campaigns</div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-mock"><div class="card-mock-inner"><div class="card-mock-txt">Featured Listing<br>Harbourfront</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Property · Featured Listing</div>
+          <h3>Luxury Property Highlight</h3>
+          <p class="card-desc">Editorial-quality property showcase content for premium listings — photography direction, copy, and platform-native formatting across IG, Facebook, and LinkedIn.</p>
+          <div class="card-obj">Objective: <strong>Drive listing visibility &amp; buyer enquiries</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock gold-bg"><div class="card-mock-inner"><div class="card-mock-txt">Market Report<br>$758/sqft · Q1 2025</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Property · Market Data</div>
+          <h3>Toronto Condo Market Snapshot</h3>
+          <p class="card-desc">Data-driven market intelligence posts positioning the platforms as the authoritative source for Toronto real estate — driving platform visits and newsletter sign-ups.</p>
+          <div class="card-obj">Objective: <strong>Establish authority &amp; drive platform visits</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock alt-bg"><div class="card-mock-inner"><div class="card-mock-txt">Every Room Has<br>A Story</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Property · Brand Storytelling</div>
+          <h3>"Every Room Has a Story" — Editorial Series</h3>
+          <p class="card-desc">Aspirational editorial content series connecting properties to lifestyle and emotion — building brand affinity and differentiating from competitor platforms.</p>
+          <div class="card-obj">Objective: <strong>Emotional connection &amp; brand awareness</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock"><div class="card-mock-inner"><div class="card-mock-txt">Agent Spotlight<br>Feature</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Agent · Spotlight</div>
+          <h3>Agent Spotlight — Team Member Feature</h3>
+          <p class="card-desc">Bespoke agent branding posts creating personal brand visibility — boosting individual agent profiles while building platform community and trust.</p>
+          <div class="card-obj">Objective: <strong>Agent branding &amp; team visibility</strong></div>
+        </div>
+      </div>
+      <div class="card card-featured">
+        <div class="card-mock gold-bg"><div class="card-mock-inner"><div class="card-mock-txt">Join Our Team<br>400+ Agents</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Agent · Recruitment</div>
+          <h3>Agent Recruitment — "Join Our Team" Campaign</h3>
+          <p class="card-desc">Sustained recruitment campaign designed to grow the agent network — highlighting platform benefits, agent success stories, and brokerage value proposition.</p>
+          <div class="card-obj">Objective: <strong>Grow agent network (30 → 400+)</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock alt-bg"><div class="card-mock-inner"><div class="card-mock-txt">Open House<br>Saturday 2–4 PM</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Event · Open House</div>
+          <h3>Open House Announcement</h3>
+          <p class="card-desc">Time-sensitive event content designed for maximum reach — geo-targeted, story and feed optimised, with consistent weekly cadence building audience habits.</p>
+          <div class="card-obj">Objective: <strong>Drive foot traffic &amp; listing engagement</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock"><div class="card-mock-inner"><div class="card-mock-txt">Annual Partner Event<br>ParkX Series</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Event · Brokerage</div>
+          <h3>Annual Partner Event — ParkX Series</h3>
+          <p class="card-desc">Annual brokerage partner event campaign — pre-event hype, live coverage, and post-event recap content driving community engagement and partner visibility.</p>
+          <div class="card-obj">Objective: <strong>Community building &amp; agent engagement</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock gold-bg"><div class="card-mock-inner"><div class="card-mock-txt">Holiday Season<br>Campaign</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Seasonal · Holiday</div>
+          <h3>Holiday Season Campaign</h3>
+          <p class="card-desc">Seasonal storytelling campaigns maintaining touchpoints during key calendar moments — warm, editorial tone reinforcing brand humanity and community connection.</p>
+          <div class="card-obj">Objective: <strong>Brand affinity &amp; seasonal engagement</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock alt-bg"><div class="card-mock-inner"><div class="card-mock-txt">LinkedIn Luxury<br>Property Series</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Agent · LinkedIn Campaign</div>
+          <h3>LinkedIn Luxury Property Highlight</h3>
+          <p class="card-desc">Professional platform content targeting B2B audiences — investors, developers, and high-net-worth buyers — through LinkedIn-native formatting and strategic tone.</p>
+          <div class="card-obj">Objective: <strong>B2B visibility &amp; professional positioning</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- 03 EMAIL MARKETING -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div id="email" class="dark">
+  <div class="wrap reveal">
+    <div class="sec-tag">03 — Email Marketing Portfolio</div>
+    <h2>Email <em>Campaign Leadership</em></h2>
+    <div class="gold-bar"></div>
+    <p class="lead">A high-volume email program spanning property newsletters, market intelligence, agent communications, promotional campaigns, and seasonal content — each built with conversion-focused layout, clear hierarchy, and consistent brand standards across a 100,000+ subscriber database.</p>
+
+    <div class="grid-auto" style="margin-bottom: 52px;">
+      <div class="dk-card">
+        <div class="dk-card-num">1K+</div>
+        <div class="dk-card-label">Email Campaigns Deployed</div>
+        <p class="dk-card-desc">Across property newsletters, market intelligence, agent comms, promotional, and seasonal campaigns.</p>
+      </div>
+      <div class="dk-card">
+        <div class="dk-card-num">34%</div>
+        <div class="dk-card-label">Lead Conversion Improvement</div>
+        <p class="dk-card-desc">Redesigned segmentation logic, trigger sequences, and content cadences within 90 days.</p>
+      </div>
+      <div class="dk-card">
+        <div class="dk-card-num">100K+</div>
+        <div class="dk-card-label">Subscriber Database</div>
+        <p class="dk-card-desc">Managed email marketing programs across a 100,000+ subscriber base with optimised segmentation.</p>
+      </div>
+      <div class="dk-card">
+        <div class="dk-card-num">400+</div>
+        <div class="dk-card-label">Agents with Email Assets</div>
+        <p class="dk-card-desc">Branded email and marketing packages supporting the full agent network.</p>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · Customer Retention</div>
+        <h3>Retaining the Customer — Re-Engagement</h3>
+        <p>Education-driven re-engagement series targeting lapsed users — onboarding refreshers, feature spotlights, and personalised re-entry flows.</p>
+        <div class="dk-email-obj">Objective: <span>Retention &amp; returning client activation</span></div>
+      </div>
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · Property Newsletter</div>
+        <h3>Featured Listings Newsletter</h3>
+        <p>Weekly curated property roundup delivered to registered buyers — personalised by search criteria, neighbourhood, and price range.</p>
+        <div class="dk-email-obj">Objective: <span>Re-engagement &amp; lead conversion</span></div>
+      </div>
+      <div class="dk-email-card" style="border: 2px solid rgba(255,255,255,0.16);">
+        <div class="dk-email-cat">Email · Market Intelligence</div>
+        <h3>Monthly Market Report</h3>
+        <p>Data-driven market briefing positioning Condos.ca as the authoritative source for Toronto real estate intelligence and market trends.</p>
+        <div class="dk-email-obj">Objective: <span>Authority building &amp; platform traffic</span></div>
+      </div>
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · Agent Communications</div>
+        <h3>Agent Weekly Bulletin</h3>
+        <p>Internal agent communication keeping the 400+ agent network informed on platform updates, new tools, market data, and resources.</p>
+        <div class="dk-email-obj">Objective: <span>Agent retention &amp; enablement</span></div>
+      </div>
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · Pre-Construction</div>
+        <h3>Pre-Con Exclusive Value Proposition</h3>
+        <p>Pre-construction exclusive campaign communicating early-access value, developer partnerships, and VIP registration flows.</p>
+        <div class="dk-email-obj">Objective: <span>Pre-con lead generation &amp; pipeline</span></div>
+      </div>
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · Product Launch</div>
+        <h3>Home Value Estimate Launch</h3>
+        <p>Feature launch campaign introducing the Instant Home Value Estimate tool — personalised subject lines and dynamic content driving click-through.</p>
+        <div class="dk-email-obj">Objective: <span>Feature adoption &amp; traffic</span></div>
+      </div>
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · Seasonal Campaign</div>
+        <h3>Holiday Season Campaign</h3>
+        <p>Branded seasonal send maintaining touchpoint during the holiday period — warm, editorial tone reinforcing brand affinity across all segments.</p>
+        <div class="dk-email-obj">Objective: <span>Brand awareness &amp; engagement</span></div>
+      </div>
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · Automated Lifecycle</div>
+        <h3>Listing Alert — Automated</h3>
+        <p>Behaviour-triggered alert emails serving personalised listing matches — highest-engagement email type, driving repeat platform visits and conversion.</p>
+        <div class="dk-email-obj">Objective: <span>Re-engagement &amp; conversion</span></div>
+      </div>
+      <div class="dk-email-card">
+        <div class="dk-email-cat">Email · User Newsletter</div>
+        <h3>Users Weekly Bulletin</h3>
+        <p>Weekly digest keeping registered platform users informed — market updates, new listings, feature announcements, and editorial content.</p>
+        <div class="dk-email-obj">Objective: <span>Engagement &amp; platform stickiness</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- 04 PRINT & CAMPAIGNS -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div id="print" style="background: var(--linen);">
+  <div class="wrap reveal">
+    <div class="sec-tag">04 — Print Collateral &amp; Integrated Campaigns</div>
+    <h2>Integrated <em>Campaign Leadership</em></h2>
+    <div class="gold-bar"></div>
+    <p class="lead">Led strategy and execution of integrated marketing campaigns across digital, email, and print channels — ensuring consistent brand storytelling and measurable performance. Every campaign designed as a cohesive system: digital and physical touchpoints working in tandem to drive engagement, conversion, and brand recognition.</p>
+
+    <!-- A/B Testing Section -->
+    <div style="margin-bottom: 56px;">
+      <div class="sec-tag" style="margin-bottom: 8px;">A/B Testing — Creative Optimisation</div>
+      <p style="font-size: 14px; color: var(--slate); line-height: 1.8; max-width: 640px; margin-bottom: 32px; font-weight: 300;">Systematic A/B testing across social and email creative — testing headline framing, visual hierarchy, CTA copy, and image selection to optimise engagement and conversion rates.</p>
+
+      <div class="ab-grid">
+        <div>
+          <div class="ab-col-label variant-a">Variant A — Problem-First</div>
+          <div class="ab-item">
+            <div class="ab-headline">Going Broke with Increased Pre-Con Closing Costs?</div>
+            <div class="ab-note">Pain point lead → solution CTA</div>
+          </div>
+          <div class="ab-item">
+            <div class="ab-headline">PreCon Love — Editorial Blog Feature</div>
+            <div class="ab-note">Editorial voice → content-first</div>
+          </div>
+          <div class="ab-item">
+            <div class="ab-headline">Should There Be a Cooling-Off Period? (White bg)</div>
+            <div class="ab-note">Clean editorial, text-forward</div>
+          </div>
+        </div>
+        <div>
+          <div class="ab-col-label variant-b">Variant B — Urgency-First</div>
+          <div class="ab-item">
+            <div class="ab-headline">Need to Sell Your Artform Condo ASAP?</div>
+            <div class="ab-note">Urgency hook → direct response</div>
+          </div>
+          <div class="ab-item">
+            <div class="ab-headline">PreCon Love on the Blog — Text Overlay</div>
+            <div class="ab-note">Bold typography, image-forward</div>
+          </div>
+          <div class="ab-item">
+            <div class="ab-headline">Should There Be a Cooling-Off Period? (Photo bg)</div>
+            <div class="ab-note">Lifestyle image, overlaid text</div>
+          </div>
+        </div>
+        <div>
+          <div class="ab-col-label framework">Testing Framework</div>
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 20px;">
+            <div class="ab-framework-item">
+              <div class="ab-fw-title">Headline Framing</div>
+              <div class="ab-fw-desc">Problem-first vs. urgency-first vs. editorial</div>
+            </div>
+            <div class="ab-framework-item">
+              <div class="ab-fw-title">Visual Hierarchy</div>
+              <div class="ab-fw-desc">Text-forward vs. image-forward layouts</div>
+            </div>
+            <div class="ab-framework-item">
+              <div class="ab-fw-title">CTA Positioning</div>
+              <div class="ab-fw-desc">Above fold vs. below content</div>
+            </div>
+            <div class="ab-framework-item">
+              <div class="ab-fw-title">Color Backgrounds</div>
+              <div class="ab-fw-desc">Clean white vs. dark overlay vs. lifestyle photo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Print Collateral -->
+    <div class="sec-tag" style="margin-bottom: 20px;">Print Collateral &amp; Physical Touchpoints</div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-mock gold-bg"><div class="card-mock-inner"><div class="card-mock-txt">Listing Brochure<br>Feature Sheet</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Print · Listing Collateral</div>
+          <h3>Property Feature Sheets &amp; Brochures</h3>
+          <p class="card-desc">Premium print collateral for property listings — multi-page brochures, single-sheet features, and open house leave-behinds in both light and dark luxury formats.</p>
+          <div class="card-obj">Objective: <strong>Listing visibility &amp; buyer engagement</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock"><div class="card-mock-inner"><div class="card-mock-txt">Agent Marketing<br>Package</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Print · Agent Marketing</div>
+          <h3>Agent Personal Brand Packages</h3>
+          <p class="card-desc">Bespoke branded print packages for 400+ agents — business cards, presentation folders, listing templates, and direct mail campaigns aligned to individual agent brand identity.</p>
+          <div class="card-obj">Objective: <strong>Agent brand visibility &amp; lead generation</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock alt-bg"><div class="card-mock-inner"><div class="card-mock-txt">Direct Mail<br>Campaign</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Print · Direct Mail</div>
+          <h3>Direct Mail &amp; Neighbourhood Campaigns</h3>
+          <p class="card-desc">Geo-targeted neighbourhood direct mail campaigns — just-sold postcards, market report mailers, and seasonal campaign pieces designed for maximum door-to-door impact.</p>
+          <div class="card-obj">Objective: <strong>Neighbourhood market penetration</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock gold-bg"><div class="card-mock-inner"><div class="card-mock-txt">Event Collateral<br>Signage</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Print · Events &amp; Signage</div>
+          <h3>Event Collateral &amp; Environmental Signage</h3>
+          <p class="card-desc">Full event production collateral — trade show booth graphics, pull-up banners, table displays, and partner event signage packages for the annual ParkX series and industry events.</p>
+          <div class="card-obj">Objective: <strong>Brand presence &amp; event engagement</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock"><div class="card-mock-inner"><div class="card-mock-txt">Presentation<br>Decks &amp; Kits</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Print · Sales Enablement</div>
+          <h3>Sales Presentation Kits &amp; Pitch Decks</h3>
+          <p class="card-desc">B2B sales enablement materials for the 400+ agent network — pitch decks, value proposition frameworks, and competitive analysis tools for agent acquisition and retention.</p>
+          <div class="card-obj">Objective: <strong>B2B conversion &amp; agent retention</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock alt-bg"><div class="card-mock-inner"><div class="card-mock-txt">Market Intelligence<br>Print Report</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Print · Market Reports</div>
+          <h3>Quarterly Market Intelligence Reports</h3>
+          <p class="card-desc">Printed quarterly market intelligence reports distributed to agents and premium buyers — designed as a premium branded touchpoint reinforcing platform authority and expertise.</p>
+          <div class="card-obj">Objective: <strong>Authority &amp; premium brand positioning</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- 05 LANDING PAGES -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div id="landing" style="background: var(--card);">
+  <div class="wrap reveal">
+    <div class="sec-tag">05 — Landing Pages &amp; Conversion Design</div>
+    <h2>Landing Page <em>Optimisation</em></h2>
+    <div class="gold-bar"></div>
+    <p class="lead">Designed and tested high-conversion landing pages across B2C buyer acquisition, B2B agent recruitment, product launches, and event registrations — each built for measurable performance with clear hierarchy and conversion-focused UX.</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-mock gold-bg"><div class="card-mock-inner"><div class="card-mock-txt">This is NOT the<br>2021 Real Estate Market!</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Landing Page · Seller Acquisition</div>
+          <h3>"Not the 2021 Market" — Seller Campaign</h3>
+          <p class="card-desc">Conversion-focused seller acquisition page using market context framing — responsive across mobile, tablet, and desktop with multi-step form flow and social proof elements.</p>
+          <div class="card-obj">Objective: <strong>Seller lead generation &amp; listing acquisition</strong></div>
+        </div>
+      </div>
+      <div class="card card-featured">
+        <div class="card-mock"><div class="card-mock-inner"><div class="card-mock-txt">HomeBound<br>First-Time Buyer Seminar</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Landing Page · Event Registration</div>
+          <h3>HomeBound — First-Time Buyer Seminar</h3>
+          <p class="card-desc">Event registration landing page for free buyer education seminar — video embed, topic outline, registration form, and incentive banner driving sign-up conversion.</p>
+          <div class="card-obj">Objective: <strong>Event registration &amp; buyer lead capture</strong></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-mock alt-bg"><div class="card-mock-inner"><div class="card-mock-txt">Our New App<br>is Move-In Ready!</div></div></div>
+        <div class="card-body">
+          <div class="card-cat">Landing Page · App Launch</div>
+          <h3>Condos.ca App — Move-In Ready Launch</h3>
+          <p class="card-desc">Mobile app launch landing page with feature highlights, benefit laddering, app store CTAs, and device mockup showcasing the platform's search and alert capabilities.</p>
+          <div class="card-obj">Objective: <strong>App downloads &amp; mobile user acquisition</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- 06 CREATIVE APPROACH -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div style="background: var(--linen);">
+  <div class="wrap reveal">
+    <div class="sec-tag">06 — Creative Approach &amp; Method</div>
+    <h2>Strategy &amp; <em>Creative Framework</em></h2>
+    <div class="gold-bar"></div>
+    <p class="lead">Every campaign rooted in a clear brand strategy — balancing aspirational property storytelling with practical agent enablement, community connection, and data-informed content decisions.</p>
+    <div class="approach-grid">
+      <div class="approach-card"><span class="approach-icon">🏠</span><h3>Property Storytelling</h3><p>Elevating listings through editorial-quality visual content and compelling narratives that connect buyers to homes emotionally.</p></div>
+      <div class="approach-card"><span class="approach-icon">👤</span><h3>Agent Brand Building</h3><p>Bespoke marketing assets and personal brand systems developed for 400+ professionals across the network.</p></div>
+      <div class="approach-card"><span class="approach-icon">✨</span><h3>Lifestyle Marketing</h3><p>Connecting properties to the aspirational lifestyle of the target buyer — beyond specs and square footage.</p></div>
+      <div class="approach-card"><span class="approach-icon">📊</span><h3>Data-Informed Content</h3><p>A/B testing, attribution modelling, and performance dashboards informing every creative and strategic decision.</p></div>
+      <div class="approach-card"><span class="approach-icon">🗓️</span><h3>Seasonal Engagement</h3><p>Holiday campaigns, market moments, and cultural events driving consistent year-round engagement and brand warmth.</p></div>
+      <div class="approach-card"><span class="approach-icon">🎨</span><h3>Visual Identity Systems</h3><p>Consistent brand standards across all platforms — a cohesive design system built to scale with team growth and content volume.</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<!-- 07 ROLE & EXPERIENCE -->
+<!-- ══════════════════════════════════════════════════════════════════════════ -->
+<div id="role" style="background: var(--card);">
+  <div class="wrap reveal">
+    <div class="sec-tag">07 — Role &amp; Responsibilities</div>
+    <h2>Creative <em>Leadership</em></h2>
+    <div class="gold-bar"></div>
+
+    <div class="role-grid">
+      <div>
+        <!-- Selected Impact -->
+        <div class="sec-tag" style="margin-bottom: 16px;">Selected Impact</div>
+        <div class="impact-item">Scaled multi-brand real estate platforms to <strong>2M+ registered users and 2.4M monthly sessions</strong> through integrated acquisition and customer lifecycle strategies.</div>
+        <div class="impact-item">Improved lead conversion by <strong>34% within 90 days</strong> at Strata Realty through redesigned CRM segmentation and trigger sequences.</div>
+        <div class="impact-item">Led full portfolio rebrand across <strong>Brookfield Asset Management's</strong> flagship Class A commercial real estate assets — 28% lift in tenant engagement.</div>
+        <div class="impact-item">Built, mentored, and led a <strong>15-person cross-functional</strong> marketing, creative, and operations team.</div>
+        <div class="impact-item">Directed presentation centre activations for luxury pre-construction launches including <strong>targeted newsletter sequences and developer project launch events</strong> for agents.</div>
+        <div class="impact-item">Managed $1M+ annual performance marketing budget — <strong>improving ROAS by 42% and driving 35% YoY conversion growth</strong> through disciplined A/B testing.</div>
+
+        <!-- Core Capabilities -->
+        <div class="sec-tag" style="margin-top: 36px; margin-bottom: 16px;">Core Capabilities</div>
+        <div class="cap-item">
+          <div class="cap-title">Revenue Marketing &amp; Demand Generation</div>
+          <div class="cap-desc">Performance Media · Omnichannel Acquisition · Brand-to-Demand Integration · CRO · OGST Framework</div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-title">Brand &amp; Creative Direction</div>
+          <div class="cap-desc">Adobe Creative Suite (Ps, Ai, Id) · Figma · Visual Identity Systems · Quality Governance · Campaign Toolkits</div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-title">MarTech &amp; Analytics</div>
+          <div class="cap-desc">CRM Platforms · GA4 · Looker Studio · A/B Testing · Email Marketing · AI Workflow Automation</div>
+        </div>
+        <div class="cap-item">
+          <div class="cap-title">Project &amp; Budget Management</div>
+          <div class="cap-desc">PMP-Certified · Annual Budget Management · Vendor &amp; Agency Management · Critical Path Planning · Agile</div>
+        </div>
+
+        <!-- Education -->
+        <div class="sec-tag" style="margin-top: 36px; margin-bottom: 16px;">Education &amp; Certifications</div>
+        <div class="edu-grid" style="grid-template-columns: 1fr; gap: 10px;">
+          <div class="edu-card"><div class="edu-icon">🎓</div><div><div class="edu-degree">MBA Essentials (Executive Education)</div><div class="edu-school">Rotman School of Management, University of Toronto</div></div></div>
+          <div class="edu-card"><div class="edu-icon">📜</div><div><div class="edu-degree">Project Management Professional (PMP)</div><div class="edu-school">Project Management Institute</div></div></div>
+          <div class="edu-card"><div class="edu-icon">🎨</div><div><div class="edu-degree">Bachelor of Design (B.Des.)</div><div class="edu-school">OCAD University, Toronto</div></div></div>
+          <div class="edu-card"><div class="edu-icon">🖼️</div><div><div class="edu-degree">Bachelor of Fine Arts (BFA)</div><div class="edu-school">York University, Toronto</div></div></div>
+          <div class="edu-card"><div class="edu-icon">💻</div><div><div class="edu-degree">Digital Marketing &amp; New Media Certificate</div><div class="edu-school">Sheridan College</div></div></div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div>
+        <div class="sec-tag" style="margin-bottom: 16px;">Professional Experience</div>
+
+        <div class="exp-item">
+          <div class="exp-role">Marketing Manager – Project Marketing &amp; Brand (Contract)</div>
+          <div class="exp-company">Strata Realty Inc. · Toronto</div>
+          <div class="exp-date">Jan 2025 – Present · Growth-stage real estate platform</div>
+          <div class="exp-bullet">Led project marketing strategy and campaign execution — developed and activated integrated campaigns across digital, email, and onsite channels aligned to leasing and sales lifecycle objectives.</div>
+          <div class="exp-bullet">Redesigned CRM segmentation, trigger sequences, and content cadences — <strong style="color:var(--navy);">improving lead conversion by 34% within 90 days.</strong></div>
+          <div class="exp-bullet">Integrated AI-driven workflows into marketing operations — <strong style="color:var(--navy);">reducing campaign production timelines by 40%</strong> while maintaining brand standards.</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Senior Marketing Manager &amp; Creative Director</div>
+          <div class="exp-company">Property.ca Inc. / Condos.ca / MrLoft.ca · Toronto</div>
+          <div class="exp-date">Oct 2016 – Sep 2024 · Founding leader — 3 brands, 2M+ users, $1B+ pipeline, 15-person team</div>
+          <div class="exp-bullet">Owned end-to-end project marketing from early-stage strategy and budgeting through brand development, collateral creation, campaign activation, and marketing close-out.</div>
+          <div class="exp-bullet">Managed $1M+ annual performance marketing budget across Google Ads, Meta, and Display — <strong style="color:var(--navy);">improving ROAS by 42% and driving 35% YoY conversion growth.</strong></div>
+          <div class="exp-bullet">Scaled agent network from 30 to 400+ through targeted B2B ABM strategy and lifecycle CRM.</div>
+          <div class="exp-bullet">Built and led a 15-person cross-functional marketing team with KPI/OKR governance aligned to revenue targets.</div>
+          <div class="exp-bullet">Governed brand identity systems and visual standards across three simultaneous platforms — collateral, digital, environmental, and event materials.</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Marketing Brand Lead – B2B Brand &amp; Integrated Campaigns</div>
+          <div class="exp-company">Brookfield Asset Management · Toronto</div>
+          <div class="exp-date">May 2012 – Aug 2014 · First Canadian Place, Bay Adelaide Centre &amp; Brookfield Place</div>
+          <div class="exp-bullet">Led full portfolio rebrand across flagship Class A commercial assets — developed brand identity systems, visual standards, and integrated B2B campaigns driving a <strong style="color:var(--navy);">28% lift in tenant engagement.</strong></div>
+          <div class="exp-bullet">Produced leasing presentations, marketing toolkits, and stakeholder communications — managed vendor and agency relationships for on-brand, on-time delivery.</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-role">Senior Designer – Brand Strategy &amp; Spatial Design</div>
+          <div class="exp-company">AvroKo · New York, NY</div>
+          <div class="exp-date">Feb 2010 – Mar 2012</div>
+          <div class="exp-bullet">Developed brand identity systems and spatial brand language for world-class luxury hospitality environments — partnering with architects and ownership groups from concept through launch.</div>
+          <div class="exp-bullet">Managed full lifecycle of complex creative projects across multiple simultaneous engagements.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ──────────────────────────────────────────────────────────────── -->
+<footer>
+  <div>
+    <div class="footer-name">Ulyana Viktyuk</div>
+    <div class="footer-title">Marketing Manager · PMP-Certified · Toronto, ON</div>
+  </div>
+  <div class="footer-right">
+    <a href="mailto:ulyana.viktyuk@gmail.com">ulyana.viktyuk@gmail.com</a>
+    <a href="https://linkedin.com/in/ulyanaviktyuk">linkedin.com/in/ulyanaviktyuk</a>
+    <a href="tel:4167208886">416-720-8886</a>
+    <div class="footer-copy">© 2026 Ulyana Viktyuk. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+reveals.forEach(el => revealObs.observe(el));
+
+// Scroll dots
+const sections = ['overview','digital','social','email','print','landing','role'];
+const dots = document.querySelectorAll('.sdot');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+function getActive() {
+  let current = sections[0];
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 80) current = id;
+  });
+  return current;
+}
+
+window.addEventListener('scroll', () => {
+  const active = getActive();
+  dots.forEach((d, i) => d.classList.toggle('active', sections[i] === active));
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === `#${active}` ? 'var(--gold-l)' : '';
+  });
+}, { passive: true });
+
+dots.forEach((d, i) => {
+  d.addEventListener('click', () => {
+    document.getElementById(sections[i])?.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Init dots
+dots[0].classList.add('active');
+</script>
+</body>
+</html>
