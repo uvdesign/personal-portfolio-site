@@ -214,8 +214,8 @@ h2 em { font-style: italic; color: var(--gold); }
 .exp-bullet:last-child { margin-bottom: 0; }
 
 /* ── PLATFORM CARDS ───────────────────────────────────────────────────────── */
-.platform-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.2s; }
-.platform-card:hover { border-color: var(--gold); }
+.platform-card { display: block; background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.2s, transform 0.22s, box-shadow 0.22s; color: inherit; text-decoration: none; }
+.platform-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(184,145,42,0.12); }
 .platform-mock { background: var(--linen-d); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .platform-mock img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .platform-mock-inner { width: 70%; height: 70%; background: var(--white); border: 1px solid var(--border-m); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
@@ -392,7 +392,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
 
     <!-- Platform Cards -->
     <div class="grid-3" style="margin-bottom: 52px;">
-      <div class="platform-card">
+      <a class="platform-card" href="https://www.property.ca" target="_blank" rel="noopener">
         <div class="platform-mock"><img src="/images/property-ca.jpg" alt="Property.ca platform screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>Property.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">B2B + B2C Platform</div>
@@ -402,9 +402,9 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
             <span class="tag">Brand Identity</span><span class="tag">CMS</span><span class="tag">SEO</span><span class="tag">Performance Marketing</span>
           </div>
         </div>
-      </div>
-      <div class="platform-card">
-        <div class="platform-mock"><img src="/images/condos-ca.jpg" alt="Condos.ca platform screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>Condos.ca</div></div>'"></div>
+      </a>
+      <a class="platform-card" href="https://www.condos.ca" target="_blank" rel="noopener">
+        <div class="platform-mock"><img src="/images/condos-ca.jpg?v=2" alt="Condos.ca platform screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>Condos.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">B2C Buyer Platform</div>
           <h3>Condos.ca</h3>
@@ -413,8 +413,8 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
             <span class="tag">Landing Pages</span><span class="tag">Email Marketing</span><span class="tag">GA4</span><span class="tag">Looker Studio</span>
           </div>
         </div>
-      </div>
-      <div class="platform-card">
+      </a>
+      <a class="platform-card" href="https://www.mrloft.ca" target="_blank" rel="noopener">
         <div class="platform-mock"><img src="/images/mrloft-ca.jpg" alt="MrLoft.ca platform screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>MrLoft.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">Luxury Niche Platform</div>
@@ -424,7 +424,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
             <span class="tag">Brand Governance</span><span class="tag">Figma</span><span class="tag">InDesign</span><span class="tag">Content Strategy</span>
           </div>
         </div>
-      </div>
+      </a>
     </div>
 
     <!-- Approach Cards -->
