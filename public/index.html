@@ -16,6 +16,7 @@
   --gold-xl:  #f5edd8;
   --gold-deep:#5e5030;
   --gold-bright: #b08a3e;
+  --gold-stats:  #9a7838;
   --linen:    #f8f5f1;
   --linen-d:  #f0ece6;
   --champagne:#e4e0da;
@@ -113,7 +114,7 @@ h2 em { font-style: italic; color: var(--gold); }
 .photo-placeholder span { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.25); }
 
 /* ── STATS BAR ────────────────────────────────────────────────────────────── */
-.stats-bar { background: var(--gold-bright); display: grid; grid-template-columns: repeat(4, 1fr); }
+.stats-bar { background: var(--gold-stats); display: grid; grid-template-columns: repeat(4, 1fr); }
 .sbar { padding: 36px 32px; border-right: 1px solid rgba(255,255,255,0.2); text-align: center; }
 .sbar:last-child { border-right: none; }
 .sbar-num { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 300; color: #ffffff; line-height: 1; margin-bottom: 0.3rem; }
@@ -215,7 +216,8 @@ h2 em { font-style: italic; color: var(--gold); }
 /* ── PLATFORM CARDS ───────────────────────────────────────────────────────── */
 .platform-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.2s; }
 .platform-card:hover { border-color: var(--gold); }
-.platform-mock { background: var(--linen-d); height: 130px; display: flex; align-items: center; justify-content: center; }
+.platform-mock { background: var(--linen-d); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.platform-mock img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .platform-mock-inner { width: 70%; height: 70%; background: var(--white); border: 1px solid var(--border-m); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
 .platform-mock-txt { font-family: 'Cormorant Garamond', serif; font-size: 13px; color: var(--navy-mid); font-style: italic; }
 .platform-body { padding: 22px; }
@@ -352,7 +354,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
   <div class="hero-left">
     <div class="hero-eyebrow">Marketing Manager · Industrial Real Estate</div>
     <h1>Brand, Growth<br>&amp; <em>Campaign Strategy</em></h1>
-    <p class="hero-sub">Real Estate · Brand Identity · Performance Marketing · Project Execution</p>
+    <p class="hero-sub">Brand Identity · Performance Marketing · Project Execution</p>
     <p class="hero-desc">Strategic and hands-on marketing manager with deep expertise in real estate project marketing, brand guardianship, and full-cycle campaign execution. PMP-certified. Highly creative with a rigorous eye for visual identity and quality across all marketing touchpoints.</p>
     <div class="hero-cta">
       <a href="#digital" class="btn-primary">View Portfolio</a>
@@ -391,7 +393,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <!-- Platform Cards -->
     <div class="grid-3" style="margin-bottom: 52px;">
       <div class="platform-card">
-        <div class="platform-mock"><div class="platform-mock-inner"><div class="platform-mock-txt">Property.ca</div></div></div>
+        <div class="platform-mock"><img src="/images/property-ca.jpg" alt="Property.ca platform screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>Property.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">B2B + B2C Platform</div>
           <h3>Property.ca</h3>
