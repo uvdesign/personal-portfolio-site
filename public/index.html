@@ -54,11 +54,11 @@ nav {
 .wrap-sm { max-width: 1320px; margin: 0 auto; padding: 0 72px 72px; }
 .sec-tag {
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 12px; font-weight: 400;
+  color: var(--gold-l); margin-bottom: 12px; font-weight: 400;
   display: flex; align-items: center; gap: 10px;
   font-family: 'DM Mono', monospace;
 }
-.sec-tag::after { content: ''; width: 40px; height: 1px; background: var(--gold); opacity: 0.4; }
+.sec-tag::after { content: ''; width: 40px; height: 1px; background: var(--gold-l); opacity: 0.5; }
 h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.2vw, 46px); font-weight: 300; line-height: 1.12; margin-bottom: 16px; color: var(--navy); }
 h2 em { font-style: italic; color: var(--gold-l); }
 .lead { font-size: 15px; color: var(--slate); max-width: 640px; line-height: 1.9; margin-bottom: 52px; font-weight: 300; }
@@ -108,7 +108,7 @@ h2 em { font-style: italic; color: var(--gold-l); }
 .stats-bar { background: linear-gradient(105deg, #F7F1E6 0%, #FAF8F3 40%, #F2EBD9 100%); display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(184,145,42,0.25); border-bottom: 1px solid rgba(184,145,42,0.25); }
 .sbar { padding: 36px 32px; border-right: 1px solid rgba(184,145,42,0.14); }
 .sbar:last-child { border-right: none; }
-.sbar-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 4px; }
+.sbar-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--gold-l); line-height: 1; margin-bottom: 4px; }
 .sbar-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); font-family: 'DM Mono', monospace; }
 
 /* ── PORTFOLIO CARDS ──────────────────────────────────────────────────────── */
@@ -182,8 +182,8 @@ h2 em { font-style: italic; color: var(--gold-l); }
 .inline-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--rule, var(--border)); border: 1px solid var(--border); border-radius: 2px; overflow: hidden; margin-bottom: 52px; }
 .istat { background: var(--white); padding: 28px 22px; }
 .istat-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); margin-bottom: 6px; font-family: 'DM Mono', monospace; }
-.istat-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--navy); line-height: 1; margin-bottom: 6px; }
-.istat-num span { color: var(--gold); font-size: 20px; }
+.istat-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--gold-l); line-height: 1; margin-bottom: 6px; }
+.istat-num span { color: var(--gold-xl); font-size: 20px; }
 .istat-desc { font-size: 12px; color: var(--slate); line-height: 1.6; }
 
 /* ── ROLE SECTION ─────────────────────────────────────────────────────────── */
@@ -216,25 +216,28 @@ h2 em { font-style: italic; color: var(--gold-l); }
 /* ── APPROACH ─────────────────────────────────────────────────────────────── */
 .approach-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; }
 .approach-card { background: var(--white); border: 1px solid var(--border); border-radius: 2px; padding: 28px 22px; }
-.approach-icon { font-size: 18px; margin-bottom: 14px; display: block; }
+.approach-icon { width: 22px; height: 22px; margin-bottom: 16px; display: block; color: var(--gold); }
+.approach-icon svg { width: 22px; height: 22px; }
 .approach-card h3 { font-size: 14px; font-weight: 500; margin-bottom: 8px; color: var(--navy-mid); }
 .approach-card p { font-size: 12px; color: var(--slate); line-height: 1.7; }
 
 /* ── EDUCATION ────────────────────────────────────────────────────────────── */
 .edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
 .edu-card { background: var(--white); border: 1px solid var(--border); border-radius: 2px; padding: 24px 22px; display: flex; gap: 16px; align-items: flex-start; transition: box-shadow 0.2s; }
-.edu-card:hover { box-shadow: 0 6px 24px rgba(10,9,8,0.07); }
-.edu-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.edu-card:hover { box-shadow: 0 6px 24px rgba(13,27,42,0.08); }
+.edu-icon { width: 20px; height: 20px; flex-shrink: 0; margin-top: 3px; color: var(--gold); }
+.edu-icon svg { width: 20px; height: 20px; }
 .edu-degree { font-size: 14px; font-weight: 500; color: var(--navy-mid); margin-bottom: 3px; line-height: 1.3; }
 .edu-school { font-size: 12px; color: var(--gold); font-weight: 500; }
 
 /* ── FOOTER ───────────────────────────────────────────────────────────────── */
-footer { background: #EEF3F8; padding: 60px 72px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(184,145,42,0.3); }
-.footer-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; color: var(--navy); margin-bottom: 4px; }
-.footer-title { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mist); }
+footer { background: var(--navy); padding: 60px 72px; display: flex; align-items: center; justify-content: space-between; border-top: 2px solid rgba(212,168,67,0.4); }
+.footer-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; color: var(--gold-xl); margin-bottom: 4px; }
+.footer-title { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.38); }
 .footer-right { text-align: right; }
-.footer-right a { color: var(--gold); font-size: 13px; display: block; margin-bottom: 4px; }
-.footer-copy { font-size: 11px; color: var(--mist); margin-top: 10px; }
+.footer-right a { color: var(--gold-l); font-size: 13px; display: block; margin-bottom: 4px; transition: color 0.2s; }
+.footer-right a:hover { color: var(--gold-xl); }
+.footer-copy { font-size: 11px; color: rgba(255,255,255,0.25); margin-top: 10px; }
 
 /* ── SCROLL DOTS ──────────────────────────────────────────────────────────── */
 .scroll-nav { position: fixed; right: 22px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 8px; z-index: 150; }
@@ -414,32 +417,32 @@ footer { background: #EEF3F8; padding: 60px 72px; display: flex; align-items: ce
     <!-- Approach Cards -->
     <div class="approach-grid">
       <div class="approach-card">
-        <span class="approach-icon">📐</span>
+        <span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span>
         <h3>Brand Architecture</h3>
         <p>Developed distinct visual identity systems across 3 simultaneous platforms — ensuring brand differentiation while maintaining quality standards.</p>
       </div>
       <div class="approach-card">
-        <span class="approach-icon">🎯</span>
+        <span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg></span>
         <h3>Demand Generation</h3>
         <p>Built omnichannel acquisition systems across paid, owned, and earned media aligned to sales and leasing lifecycle objectives.</p>
       </div>
       <div class="approach-card">
-        <span class="approach-icon">⚙️</span>
+        <span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg></span>
         <h3>MarTech &amp; CMS</h3>
         <p>Managed and evolved custom CMS platforms — built scalable templates and toolkits reducing campaign production timelines by 40%.</p>
       </div>
       <div class="approach-card">
-        <span class="approach-icon">📊</span>
+        <span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></span>
         <h3>Analytics &amp; Optimisation</h3>
         <p>Continuous performance tracking via GA4, Looker Studio, and CRM analytics — informing every creative and strategic decision.</p>
       </div>
       <div class="approach-card">
-        <span class="approach-icon">🤖</span>
+        <span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.4H20l-4.9 3.6 1.8 5.4L12 13l-4.9 3.4 1.8-5.4L4 7.4h6.2L12 2z"/></svg></span>
         <h3>AI-Enabled Operations</h3>
         <p>Integrated AI-driven workflows into marketing operations — maintaining brand standards while dramatically increasing production velocity.</p>
       </div>
       <div class="approach-card">
-        <span class="approach-icon">🏢</span>
+        <span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20"/><path d="M9 22V12h6v10"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="14" y1="7" x2="15" y2="7"/></svg></span>
         <h3>$1B+ Pipeline Supported</h3>
         <p>Marketing infrastructure supporting $1B+ in annual real estate transaction volume across B2B and B2C channels simultaneously.</p>
       </div>
@@ -849,12 +852,12 @@ footer { background: #EEF3F8; padding: 60px 72px; display: flex; align-items: ce
     <div class="gold-bar"></div>
     <p class="lead">Every campaign rooted in a clear brand strategy — balancing aspirational property storytelling with practical agent enablement, community connection, and data-informed content decisions.</p>
     <div class="approach-grid">
-      <div class="approach-card"><span class="approach-icon">🏠</span><h3>Property Storytelling</h3><p>Elevating listings through editorial-quality visual content and compelling narratives that connect buyers to homes emotionally.</p></div>
-      <div class="approach-card"><span class="approach-icon">👤</span><h3>Agent Brand Building</h3><p>Bespoke marketing assets and personal brand systems developed for 400+ professionals across the network.</p></div>
-      <div class="approach-card"><span class="approach-icon">✨</span><h3>Lifestyle Marketing</h3><p>Connecting properties to the aspirational lifestyle of the target buyer — beyond specs and square footage.</p></div>
-      <div class="approach-card"><span class="approach-icon">📊</span><h3>Data-Informed Content</h3><p>A/B testing, attribution modelling, and performance dashboards informing every creative and strategic decision.</p></div>
-      <div class="approach-card"><span class="approach-icon">🗓️</span><h3>Seasonal Engagement</h3><p>Holiday campaigns, market moments, and cultural events driving consistent year-round engagement and brand warmth.</p></div>
-      <div class="approach-card"><span class="approach-icon">🎨</span><h3>Visual Identity Systems</h3><p>Consistent brand standards across all platforms — a cohesive design system built to scale with team growth and content volume.</p></div>
+      <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></span><h3>Property Storytelling</h3><p>Elevating listings through editorial-quality visual content and compelling narratives that connect buyers to homes emotionally.</p></div>
+      <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span><h3>Agent Brand Building</h3><p>Bespoke marketing assets and personal brand systems developed for 400+ professionals across the network.</p></div>
+      <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg></span><h3>Lifestyle Marketing</h3><p>Connecting properties to the aspirational lifestyle of the target buyer — beyond specs and square footage.</p></div>
+      <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22,7 13.5,15.5 8.5,10.5 2,17"/><polyline points="16,7 22,7 22,13"/></svg></span><h3>Data-Informed Content</h3><p>A/B testing, attribution modelling, and performance dashboards informing every creative and strategic decision.</p></div>
+      <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><h3>Seasonal Engagement</h3><p>Holiday campaigns, market moments, and cultural events driving consistent year-round engagement and brand warmth.</p></div>
+      <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M17 3h4v4"/><path d="M21 3l-5.5 5.5"/><path d="M10.5 5C6 5 2 9 2 13.5S6 22 10.5 22 19 18 19 13.5"/><circle cx="10.5" cy="13.5" r="2"/></svg></span><h3>Visual Identity Systems</h3><p>Consistent brand standards across all platforms — a cohesive design system built to scale with team growth and content volume.</p></div>
     </div>
   </div>
 </div>
@@ -903,11 +906,11 @@ footer { background: #EEF3F8; padding: 60px 72px; display: flex; align-items: ce
         <!-- Education -->
         <div class="sec-tag" style="margin-top: 36px; margin-bottom: 16px;">Education &amp; Certifications</div>
         <div class="edu-grid" style="grid-template-columns: 1fr; gap: 10px;">
-          <div class="edu-card"><div class="edu-icon">🎓</div><div><div class="edu-degree">MBA Essentials (Executive Education)</div><div class="edu-school">Rotman School of Management, University of Toronto</div></div></div>
-          <div class="edu-card"><div class="edu-icon">📜</div><div><div class="edu-degree">Project Management Professional (PMP)</div><div class="edu-school">Project Management Institute</div></div></div>
-          <div class="edu-card"><div class="edu-icon">🎨</div><div><div class="edu-degree">Bachelor of Design (B.Des.)</div><div class="edu-school">OCAD University, Toronto</div></div></div>
-          <div class="edu-card"><div class="edu-icon">🖼️</div><div><div class="edu-degree">Bachelor of Fine Arts (BFA)</div><div class="edu-school">York University, Toronto</div></div></div>
-          <div class="edu-card"><div class="edu-icon">💻</div><div><div class="edu-degree">Digital Marketing &amp; New Media Certificate</div><div class="edu-school">Sheridan College</div></div></div>
+          <div class="edu-card"><div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div><div class="edu-degree">MBA Essentials (Executive Education)</div><div class="edu-school">Rotman School of Management, University of Toronto</div></div></div>
+          <div class="edu-card"><div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div><div><div class="edu-degree">Project Management Professional (PMP)</div><div class="edu-school">Project Management Institute</div></div></div>
+          <div class="edu-card"><div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg></div><div><div class="edu-degree">Bachelor of Design (B.Des.)</div><div class="edu-school">OCAD University, Toronto</div></div></div>
+          <div class="edu-card"><div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg></div><div><div class="edu-degree">Bachelor of Fine Arts (BFA)</div><div class="edu-school">York University, Toronto</div></div></div>
+          <div class="edu-card"><div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><div><div class="edu-degree">Digital Marketing &amp; New Media Certificate</div><div class="edu-school">Sheridan College</div></div></div>
         </div>
       </div>
 
