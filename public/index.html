@@ -319,6 +319,26 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
   .divider { margin: 0 24px; }
   .scroll-nav { display: none; }
 }
+
+/* ── LIGHTBOX ─────────────────────────────────────────────────────────────── */
+.lightbox {
+  display: none; position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,0.92); align-items: center; justify-content: center;
+  cursor: zoom-out;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 90vw; max-height: 88vh; object-fit: contain;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6); cursor: default;
+}
+.lightbox-close {
+  position: absolute; top: 20px; right: 28px;
+  color: rgba(255,255,255,0.6); font-size: 2rem; line-height: 1;
+  cursor: pointer; transition: color 0.2s; background: none; border: none;
+  font-family: 'Inter', sans-serif; font-weight: 300;
+}
+.lightbox-close:hover { color: #fff; }
+.card-mock img { cursor: zoom-in; }
 </style>
 </head>
 <body>
@@ -1026,6 +1046,36 @@ dots.forEach((d, i) => {
 
 // Init dots
 dots[0].classList.add('active');
+
+// ── LIGHTBOX ────────────────────────────────────────────────────────────────
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lightbox-img');
+
+document.querySelectorAll('.card-mock img').forEach(img => {
+  img.addEventListener('click', e => {
+    e.stopPropagation();
+    lbImg.src = img.src;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeLightbox() {
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  lbImg.src = '';
+}
+
+lb.addEventListener('click', closeLightbox);
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+lbImg.addEventListener('click', e => e.stopPropagation());
 </script>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
 </body>
 </html>
