@@ -8,22 +8,22 @@
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --navy:     #0D1B2A;
-  --navy-mid: #1A2E42;
-  --navy-lt:  #243954;
-  --gold:     #B8912A;
-  --gold-l:   #D4A843;
-  --gold-xl:  #E8C76A;
-  --gold-deep:#8A6B14;
-  --linen:    #FAF8F3;
-  --linen-d:  #F2EBD9;
-  --champagne:#E8D9B8;
-  --white:    #FEFDFB;
-  --card:     #FDFBF6;
-  --slate:    #3D5166;
-  --mist:     #7A90A4;
-  --border:   rgba(13,27,42,0.08);
-  --border-m: rgba(13,27,42,0.15);
+  --navy:     #0a0908;
+  --navy-mid: #2e2a26;
+  --navy-lt:  #5c5650;
+  --gold:     #8a6d3f;
+  --gold-l:   #a08450;
+  --gold-xl:  #f5edd8;
+  --gold-deep:#6b5430;
+  --linen:    #f8f5f1;
+  --linen-d:  #f0ece6;
+  --champagne:#e4e0da;
+  --white:    #ffffff;
+  --card:     #ffffff;
+  --slate:    #5c5650;
+  --mist:     #9a9490;
+  --border:   #e4e0da;
+  --border-m: #ccc8c2;
   --teal:     #1a5c6e;
   --red:      #c0392b;
 }
@@ -34,20 +34,21 @@ a { text-decoration: none; color: inherit; }
 /* ── NAV ──────────────────────────────────────────────────────────────────── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  background: rgba(0,0,0,0.98); backdrop-filter: blur(18px);
+  background: rgba(255,255,255,0.97); backdrop-filter: blur(18px);
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 56px; height: 58px;
-  border-bottom: 1px solid rgba(212,168,67,0.2);
+  border-bottom: 1px solid var(--border);
 }
-.nav-name { color: var(--gold-l); font-size: 10px; letter-spacing: 0.22em; font-weight: 400; text-transform: uppercase; font-family: 'DM Mono', monospace; }
+.nav-name { color: var(--navy); font-size: 10px; letter-spacing: 0.22em; font-weight: 600; text-transform: uppercase; font-family: 'DM Mono', monospace; }
+.nav-name span { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; color: var(--gold); font-size: 13px; letter-spacing: 0; text-transform: none; }
 .nav-links { display: flex; list-style: none; }
 .nav-links a {
-  color: rgba(245,242,238,0.38); font-size: 10px; letter-spacing: 0.14em;
+  color: var(--slate); font-size: 10px; letter-spacing: 0.14em;
   text-transform: uppercase; padding: 0 16px; transition: color 0.2s;
   line-height: 58px; display: block; font-weight: 400;
   font-family: 'DM Mono', monospace;
 }
-.nav-links a:hover { color: var(--gold-l); }
+.nav-links a:hover { color: var(--navy); }
 
 /* ── SHARED ───────────────────────────────────────────────────────────────── */
 .wrap { max-width: 1320px; margin: 0 auto; padding: 100px 72px; }
@@ -105,11 +106,11 @@ h2 em { font-style: italic; color: var(--gold-l); }
 .photo-placeholder span { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.25); }
 
 /* ── STATS BAR ────────────────────────────────────────────────────────────── */
-.stats-bar { background: linear-gradient(105deg, #F7F1E6 0%, #FAF8F3 40%, #F2EBD9 100%); display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(184,145,42,0.25); border-bottom: 1px solid rgba(184,145,42,0.25); }
-.sbar { padding: 36px 32px; border-right: 1px solid rgba(184,145,42,0.14); }
+.stats-bar { background: var(--gold); display: grid; grid-template-columns: repeat(4, 1fr); }
+.sbar { padding: 36px 32px; border-right: 1px solid rgba(255,255,255,0.2); text-align: center; }
 .sbar:last-child { border-right: none; }
-.sbar-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: var(--gold-l); line-height: 1; margin-bottom: 4px; }
-.sbar-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); font-family: 'DM Mono', monospace; }
+.sbar-num { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 300; color: #ffffff; line-height: 1; margin-bottom: 4px; }
+.sbar-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.6); font-family: 'DM Mono', monospace; }
 
 /* ── PORTFOLIO CARDS ──────────────────────────────────────────────────────── */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -231,12 +232,12 @@ h2 em { font-style: italic; color: var(--gold-l); }
 .edu-school { font-size: 12px; color: var(--gold); font-weight: 500; }
 
 /* ── FOOTER ───────────────────────────────────────────────────────────────── */
-footer { background: var(--navy); padding: 60px 72px; display: flex; align-items: center; justify-content: space-between; border-top: 2px solid rgba(212,168,67,0.4); }
+footer { background: var(--navy); padding: 60px 72px; display: flex; align-items: center; justify-content: space-between; border-top: 2px solid var(--gold); }
 .footer-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; color: var(--gold-xl); margin-bottom: 4px; }
 .footer-title { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.38); }
 .footer-right { text-align: right; }
 .footer-right a { color: var(--gold-l); font-size: 13px; display: block; margin-bottom: 4px; transition: color 0.2s; }
-.footer-right a:hover { color: var(--gold-xl); }
+.footer-right a:hover { color: #f5edd8; }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,0.25); margin-top: 10px; }
 
 /* ── SCROLL DOTS ──────────────────────────────────────────────────────────── */
@@ -245,7 +246,7 @@ footer { background: var(--navy); padding: 60px 72px; display: flex; align-items
 .sdot.active { background: var(--gold); transform: scale(1.4); }
 
 /* ── SECTION DIVIDER ──────────────────────────────────────────────────────── */
-.divider { height: 1px; background: var(--linen-d); margin: 0 72px; }
+.divider { height: 1px; background: var(--border); margin: 0 72px; }
 
 /* ── REVEAL ───────────────────────────────────────────────────────────────── */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
@@ -285,7 +286,7 @@ footer { background: var(--navy); padding: 60px 72px; display: flex; align-items
 
 <!-- ── NAV ──────────────────────────────────────────────────────────────────── -->
 <nav>
-  <span class="nav-name">Ulyana Viktyuk · Portfolio</span>
+  <span class="nav-name">Ulyana Viktyuk · <span>Portfolio</span></span>
   <ul class="nav-links">
     <li><a href="#overview">Overview</a></li>
     <li><a href="#digital">Digital</a></li>
