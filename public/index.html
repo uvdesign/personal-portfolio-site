@@ -169,7 +169,10 @@ h2 em { font-style: italic; color: var(--gold); }
 .dk-card-num em { font-style: italic; color: var(--gold); }
 .dk-card-label { font-size: 0.52rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-family: 'DM Mono', monospace; }
 .dk-card-desc { font-size: 0.78rem; color: var(--mist); line-height: 1.6; }
-.dk-email-card { background: var(--white); border: 1px solid var(--border); padding: 22px; }
+.dk-email-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; display: flex; flex-direction: column; }
+.dk-email-img { width: 100%; height: 200px; overflow: hidden; background: var(--linen-d); }
+.dk-email-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.dk-email-body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
 .dk-email-cat { font-size: 0.5rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; font-family: 'DM Mono', monospace; }
 .dk-email-card h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.4; }
 .dk-email-card p { font-size: 0.82rem; color: var(--slate); line-height: 1.7; }
@@ -672,58 +675,85 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
 
     <div class="grid-3">
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · Customer Retention</div>
-        <h3>Retaining the Customer — Re-Engagement</h3>
-        <p>Education-driven re-engagement series targeting lapsed users — onboarding refreshers, feature spotlights, and personalised re-entry flows.</p>
-        <div class="dk-email-obj">Objective: <span>Retention &amp; returning client activation</span></div>
+        <div class="dk-email-img"><img src="/images/email-re-engagement.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Customer Retention</div>
+          <h3>Retaining the Customer — Re-Engagement</h3>
+          <p>Education-driven re-engagement series targeting lapsed users — onboarding refreshers, feature spotlights, and personalised re-entry flows.</p>
+          <div class="dk-email-obj">Objective: <span>Retention &amp; returning client activation</span></div>
+        </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · Property Newsletter</div>
-        <h3>Featured Listings Newsletter</h3>
-        <p>Weekly curated property roundup delivered to registered buyers — personalised by search criteria, neighbourhood, and price range.</p>
-        <div class="dk-email-obj">Objective: <span>Re-engagement &amp; lead conversion</span></div>
+        <div class="dk-email-img"><img src="/images/email-listings-newsletter.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Property Newsletter</div>
+          <h3>Featured Listings Newsletter</h3>
+          <p>Weekly curated property roundup delivered to registered buyers — personalised by search criteria, neighbourhood, and price range.</p>
+          <div class="dk-email-obj">Objective: <span>Re-engagement &amp; lead conversion</span></div>
+        </div>
       </div>
       <div class="dk-email-card" style="border: 2px solid rgba(255,255,255,0.16);">
-        <div class="dk-email-cat">Email · Market Intelligence</div>
-        <h3>Monthly Market Report</h3>
-        <p>Data-driven market briefing positioning Condos.ca as the authoritative source for Toronto real estate intelligence and market trends.</p>
-        <div class="dk-email-obj">Objective: <span>Authority building &amp; platform traffic</span></div>
+        <div class="dk-email-img"><img src="/images/email-market-report.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Market Intelligence</div>
+          <h3>Monthly Market Report</h3>
+          <p>Data-driven market briefing positioning Condos.ca as the authoritative source for Toronto real estate intelligence and market trends.</p>
+          <div class="dk-email-obj">Objective: <span>Authority building &amp; platform traffic</span></div>
+        </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · Agent Communications</div>
-        <h3>Agent Weekly Bulletin</h3>
-        <p>Internal agent communication keeping the 400+ agent network informed on platform updates, new tools, market data, and resources.</p>
-        <div class="dk-email-obj">Objective: <span>Agent retention &amp; enablement</span></div>
+        <div class="dk-email-img"><img src="/images/email-agent-bulletin.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Agent Communications</div>
+          <h3>Agent Weekly Bulletin</h3>
+          <p>Internal agent communication keeping the 400+ agent network informed on platform updates, new tools, market data, and resources.</p>
+          <div class="dk-email-obj">Objective: <span>Agent retention &amp; enablement</span></div>
+        </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · Pre-Construction</div>
-        <h3>Pre-Con Exclusive Value Proposition</h3>
-        <p>Pre-construction exclusive campaign communicating early-access value, developer partnerships, and VIP registration flows.</p>
-        <div class="dk-email-obj">Objective: <span>Pre-con lead generation &amp; pipeline</span></div>
+        <div class="dk-email-img"><img src="/images/email-precon-vp.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Pre-Construction</div>
+          <h3>Pre-Con Exclusive Value Proposition</h3>
+          <p>Pre-construction exclusive campaign communicating early-access value, developer partnerships, and VIP registration flows.</p>
+          <div class="dk-email-obj">Objective: <span>Pre-con lead generation &amp; pipeline</span></div>
+        </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · Product Launch</div>
-        <h3>Home Value Estimate Launch</h3>
-        <p>Feature launch campaign introducing the Instant Home Value Estimate tool — personalised subject lines and dynamic content driving click-through.</p>
-        <div class="dk-email-obj">Objective: <span>Feature adoption &amp; traffic</span></div>
+        <div class="dk-email-img"><img src="/images/email-home-value.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Product Launch</div>
+          <h3>Home Value Estimate Launch</h3>
+          <p>Feature launch campaign introducing the Instant Home Value Estimate tool — personalised subject lines and dynamic content driving click-through.</p>
+          <div class="dk-email-obj">Objective: <span>Feature adoption &amp; traffic</span></div>
+        </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · Seasonal Campaign</div>
-        <h3>Holiday Season Campaign</h3>
-        <p>Branded seasonal send maintaining touchpoint during the holiday period — warm, editorial tone reinforcing brand affinity across all segments.</p>
-        <div class="dk-email-obj">Objective: <span>Brand awareness &amp; engagement</span></div>
+        <div class="dk-email-img"><img src="/images/email-holiday.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Seasonal Campaign</div>
+          <h3>Holiday Season Campaign</h3>
+          <p>Branded seasonal send maintaining touchpoint during the holiday period — warm, editorial tone reinforcing brand affinity across all segments.</p>
+          <div class="dk-email-obj">Objective: <span>Brand awareness &amp; engagement</span></div>
+        </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · Automated Lifecycle</div>
-        <h3>Listing Alert — Automated</h3>
-        <p>Behaviour-triggered alert emails serving personalised listing matches — highest-engagement email type, driving repeat platform visits and conversion.</p>
-        <div class="dk-email-obj">Objective: <span>Re-engagement &amp; conversion</span></div>
+        <div class="dk-email-img"><img src="/images/email-listing-alert.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · Automated Lifecycle</div>
+          <h3>Listing Alert — Automated</h3>
+          <p>Behaviour-triggered alert emails serving personalised listing matches — highest-engagement email type, driving repeat platform visits and conversion.</p>
+          <div class="dk-email-obj">Objective: <span>Re-engagement &amp; conversion</span></div>
+        </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-cat">Email · User Newsletter</div>
-        <h3>Users Weekly Bulletin</h3>
-        <p>Weekly digest keeping registered platform users informed — market updates, new listings, feature announcements, and editorial content.</p>
-        <div class="dk-email-obj">Objective: <span>Engagement &amp; platform stickiness</span></div>
+        <div class="dk-email-img"><img src="/images/email-users-bulletin.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-body">
+          <div class="dk-email-cat">Email · User Newsletter</div>
+          <h3>Users Weekly Bulletin</h3>
+          <p>Weekly digest keeping registered platform users informed — market updates, new listings, feature announcements, and editorial content.</p>
+          <div class="dk-email-obj">Objective: <span>Engagement &amp; platform stickiness</span></div>
+        </div>
       </div>
     </div>
   </div>
