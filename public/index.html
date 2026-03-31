@@ -296,6 +296,44 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
 @media (max-width: 520px) { .impact-kpi-row { grid-template-columns: 1fr; } }
 .impact-kpi-section { background: var(--white); }
 .impact-kpi-section .wrap { padding-top: 64px; padding-bottom: 64px; }
+
+/* ── SECTION STAT BARS ───────────────────────────────────────────────────── */
+.sec-stat-bar {
+  display: grid; gap: 1px; background: var(--border);
+  border: 1px solid var(--border); overflow: hidden;
+  margin: 28px 0 44px;
+}
+.sec-stat-bar.cols-4 { grid-template-columns: repeat(4,1fr); }
+.sec-stat-bar.cols-3 { grid-template-columns: repeat(3,1fr); }
+.ssb-cell {
+  background: var(--white); padding: 20px 22px;
+  transition: background 0.2s;
+}
+.dark .ssb-cell { background: #1a2235; }
+.dark .ssb-cell:hover { background: #1e2840; }
+.ssb-cell:hover { background: var(--linen); }
+.ssb-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 600; color: var(--navy);
+  line-height: 1; margin-bottom: 5px;
+}
+.dark .ssb-num { color: #fff; }
+.ssb-num em { font-style: italic; color: var(--gold); }
+.ssb-label {
+  font-size: 0.62rem; font-weight: 700; color: var(--navy);
+  letter-spacing: .08em; text-transform: uppercase; margin-bottom: 2px;
+}
+.dark .ssb-label { color: rgba(255,255,255,0.85); }
+.ssb-sub {
+  font-size: 0.67rem; color: var(--slate); line-height: 1.45;
+}
+.dark .ssb-sub { color: rgba(255,255,255,0.45); }
+@media (max-width: 700px) {
+  .sec-stat-bar.cols-4, .sec-stat-bar.cols-3 { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 420px) {
+  .sec-stat-bar.cols-4, .sec-stat-bar.cols-3 { grid-template-columns: 1fr; }
+}
 .impact-kpi-intro { margin-bottom: 40px; }
 .impact-kpi-intro .sec-tag { margin-bottom: 12px; }
 .impact-kpi-intro h2 { margin-bottom: 8px; }
@@ -484,6 +522,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <h2>Strategic <em>Platform Leadership</em></h2>
     <div class="gold-bar"></div>
     <p class="lead">Led the strategy, design, and evolution of a multi-brand digital ecosystem across Canada's leading independent real estate platforms. Oversaw the development of high-traffic consumer websites, agent-facing experiences, and conversion-optimized landing pages supporting both B2C buyer acquisition and B2B agent growth — scaling from a single platform to a national multi-brand digital infrastructure serving millions of monthly users.</p>
+    <div class="sec-stat-bar cols-4">
+      <div class="ssb-cell"><div class="ssb-num">3</div><div class="ssb-label">Platforms</div><div class="ssb-sub">Simultaneously managed end-to-end</div></div>
+      <div class="ssb-cell"><div class="ssb-num">2.4<em>M</em></div><div class="ssb-label">Monthly Sessions</div><div class="ssb-sub">Combined across all platforms</div></div>
+      <div class="ssb-cell"><div class="ssb-num">2<em>M+</em></div><div class="ssb-label">Registered Users</div><div class="ssb-sub">Scaled from launch to national reach</div></div>
+      <div class="ssb-cell"><div class="ssb-num">400<em>+</em></div><div class="ssb-label">Agent Profiles</div><div class="ssb-sub">Agent-facing pages &amp; portals</div></div>
+    </div>
 
     <!-- Platform Cards -->
     <div class="grid-3" style="margin-bottom: 52px;">
@@ -564,6 +608,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <h2>Social Media <em>Content Ecosystem</em></h2>
     <div class="gold-bar"></div>
     <p class="lead">Led social media content strategy and creative production for Property.ca and Condos.ca — developing high-performing campaigns to build brand awareness, support agent growth, and drive platform engagement across Instagram, Facebook, LinkedIn, and TikTok.</p>
+    <div class="sec-stat-bar cols-4">
+      <div class="ssb-cell"><div class="ssb-num">3</div><div class="ssb-label">Platforms</div><div class="ssb-sub">Instagram · Facebook · LinkedIn</div></div>
+      <div class="ssb-cell"><div class="ssb-num">400<em>+</em></div><div class="ssb-label">Agents Supported</div><div class="ssb-sub">Branded content &amp; agent spotlights</div></div>
+      <div class="ssb-cell"><div class="ssb-num">12<em>+</em></div><div class="ssb-label">Content Series</div><div class="ssb-sub">Managed concurrently across channels</div></div>
+      <div class="ssb-cell"><div class="ssb-num">52</div><div class="ssb-label">Weeks/Year</div><div class="ssb-sub">Consistent weekly cadence maintained</div></div>
+    </div>
 
     <div class="inline-stats">
       <div class="istat">
@@ -713,6 +763,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <h2>Email <em>Campaign Leadership</em></h2>
     <div class="gold-bar"></div>
     <p class="lead">A high-volume email program spanning property newsletters, market intelligence, agent communications, promotional campaigns, and seasonal content — each built with conversion-focused layout, clear hierarchy, and consistent brand standards across a 100,000+ subscriber database.</p>
+    <div class="sec-stat-bar cols-4">
+      <div class="ssb-cell"><div class="ssb-num">100<em>K+</em></div><div class="ssb-label">Subscribers</div><div class="ssb-sub">Opted-in, actively managed database</div></div>
+      <div class="ssb-cell"><div class="ssb-num">4</div><div class="ssb-label">Audience Segments</div><div class="ssb-sub">Buyers · Sellers · Investors · Agents</div></div>
+      <div class="ssb-cell"><div class="ssb-num">34<em>%</em></div><div class="ssb-label">Conversion Lift</div><div class="ssb-sub">Within 90 days via CRM redesign</div></div>
+      <div class="ssb-cell"><div class="ssb-num">8<em>+</em></div><div class="ssb-label">Campaign Types</div><div class="ssb-sub">Nurture · Alerts · Pre-con · Seasonal</div></div>
+    </div>
 
     <div class="grid-auto" style="margin-bottom: 52px;">
       <div class="dk-card">
@@ -859,6 +915,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <h2>Integrated <em>Campaign Leadership</em></h2>
     <div class="gold-bar"></div>
     <p class="lead">Led strategy and execution of integrated marketing campaigns across digital, email, and print channels — ensuring consistent brand storytelling and measurable performance. Every campaign designed as a cohesive system: digital and physical touchpoints working in tandem to drive engagement, conversion, and brand recognition.</p>
+    <div class="sec-stat-bar cols-4">
+      <div class="ssb-cell"><div class="ssb-num">$1<em>M+</em></div><div class="ssb-label">Annual Budget</div><div class="ssb-sub">Google Ads · Meta · Display</div></div>
+      <div class="ssb-cell"><div class="ssb-num">42<em>%</em></div><div class="ssb-label">ROAS Improvement</div><div class="ssb-sub">Through A/B testing &amp; optimisation</div></div>
+      <div class="ssb-cell"><div class="ssb-num">35<em>%</em></div><div class="ssb-label">YoY Conversion Growth</div><div class="ssb-sub">Integrated paid &amp; owned channels</div></div>
+      <div class="ssb-cell"><div class="ssb-num">400<em>+</em></div><div class="ssb-label">Agent Packages</div><div class="ssb-sub">Brand collateral produced in-house</div></div>
+    </div>
 
     <!-- A/B Testing Section -->
     <div style="margin-bottom: 56px;">
@@ -992,6 +1054,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <h2>Landing Page <em>Optimisation</em></h2>
     <div class="gold-bar"></div>
     <p class="lead">Designed and tested high-conversion landing pages across B2C buyer acquisition, B2B agent recruitment, product launches, and event registrations — each built for measurable performance with clear hierarchy and conversion-focused UX.</p>
+    <div class="sec-stat-bar cols-4">
+      <div class="ssb-cell"><div class="ssb-num">6<em>+</em></div><div class="ssb-label">Page Types</div><div class="ssb-sub">Seller · Buyer · Recruitment · Pre-con · App · Event</div></div>
+      <div class="ssb-cell"><div class="ssb-num">35<em>%</em></div><div class="ssb-label">Conversion Growth</div><div class="ssb-sub">YoY across all landing page campaigns</div></div>
+      <div class="ssb-cell"><div class="ssb-num">42<em>%</em></div><div class="ssb-label">ROAS Improvement</div><div class="ssb-sub">Continuous A/B testing &amp; CRO</div></div>
+      <div class="ssb-cell"><div class="ssb-num">3</div><div class="ssb-label">Devices</div><div class="ssb-sub">Mobile · Tablet · Desktop optimised</div></div>
+    </div>
 
     <div class="grid-3">
       <div class="card">
@@ -1063,6 +1131,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <h2>Strategy &amp; <em>Creative Framework</em></h2>
     <div class="gold-bar"></div>
     <p class="lead">Every campaign rooted in a clear brand strategy — balancing aspirational property storytelling with practical agent enablement, community connection, and data-informed content decisions.</p>
+    <div class="sec-stat-bar cols-4">
+      <div class="ssb-cell"><div class="ssb-num">40<em>%</em></div><div class="ssb-label">Faster Production</div><div class="ssb-sub">AI-enabled workflows &amp; scalable toolkits</div></div>
+      <div class="ssb-cell"><div class="ssb-num">15</div><div class="ssb-label">Person Team Led</div><div class="ssb-sub">Cross-functional marketing &amp; creative</div></div>
+      <div class="ssb-cell"><div class="ssb-num">3</div><div class="ssb-label">Brand Systems</div><div class="ssb-sub">Visual identity governed across all platforms</div></div>
+      <div class="ssb-cell"><div class="ssb-num">8<em>+</em></div><div class="ssb-label">Years Experience</div><div class="ssb-sub">Adobe Creative Suite · Figma · AI tools</div></div>
+    </div>
     <div class="approach-grid">
       <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></span><h3>Property Storytelling</h3><p>Elevating listings through editorial-quality visual content and compelling narratives that connect buyers to homes emotionally.</p></div>
       <div class="approach-card"><span class="approach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span><h3>Agent Brand Building</h3><p>Bespoke marketing assets and personal brand systems developed for 400+ professionals across the network.</p></div>
@@ -1084,6 +1158,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
     <div class="sec-tag">07 — Role &amp; Responsibilities</div>
     <h2>Creative <em>Leadership</em></h2>
     <div class="gold-bar"></div>
+    <div class="sec-stat-bar cols-4">
+      <div class="ssb-cell"><div class="ssb-num">8<em>yr</em></div><div class="ssb-label">Founding Leadership</div><div class="ssb-sub">Property.ca Inc. · Oct 2016 – Sep 2024</div></div>
+      <div class="ssb-cell"><div class="ssb-num">15</div><div class="ssb-label">Person Team</div><div class="ssb-sub">Cross-functional marketing &amp; operations</div></div>
+      <div class="ssb-cell"><div class="ssb-num">$1<em>M+</em></div><div class="ssb-label">Budget Managed</div><div class="ssb-sub">Annual performance marketing spend</div></div>
+      <div class="ssb-cell"><div class="ssb-num">3</div><div class="ssb-label">National Brands</div><div class="ssb-sub">Property.ca · Condos.ca · MrLoft.ca</div></div>
+    </div>
 
     <div class="role-grid">
       <div>
