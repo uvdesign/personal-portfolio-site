@@ -1134,17 +1134,26 @@ dots.forEach((d, i) => {
 // Init dots
 dots[0].classList.add('active');
 
-// ── LIGHTBOX ────────────────────────────────────────────────────────────────
-const lb = document.getElementById('lightbox');
-const lbImg = document.getElementById('lightbox-img');
+</script>
 
-document.querySelectorAll('.card-mock img').forEach(img => {
-  img.addEventListener('click', e => {
-    e.stopPropagation();
-    lbImg.src = img.src;
-    lb.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  });
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+// ── LIGHTBOX ────────────────────────────────────────────────────────────────
+const lb = document.querySelector('.lightbox');
+const lbImg = document.querySelector('.lightbox img');
+
+document.addEventListener('click', e => {
+  const img = e.target.tagName === 'IMG' && e.target.closest('.card-mock') ? e.target : null;
+  if (!img) return;
+  e.stopPropagation();
+  lbImg.src = img.src;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
 });
 
 function closeLightbox() {
@@ -1154,15 +1163,9 @@ function closeLightbox() {
 }
 
 lb.addEventListener('click', closeLightbox);
-document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-close').addEventListener('click', e => { e.stopPropagation(); closeLightbox(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 lbImg.addEventListener('click', e => e.stopPropagation());
 </script>
-
-<!-- ── LIGHTBOX ── -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightbox-close">&times;</button>
-  <img id="lightbox-img" src="" alt="">
-</div>
 </body>
 </html>
