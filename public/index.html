@@ -173,8 +173,10 @@ h2 em { font-style: italic; color: var(--gold); }
 .dk-card-label { font-size: 0.52rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-family: 'DM Mono', monospace; }
 .dk-card-desc { font-size: 0.78rem; color: var(--mist); line-height: 1.6; }
 .dk-email-card { background: var(--white); border: 1px solid var(--border); overflow: hidden; display: flex; flex-direction: column; }
-.dk-email-img { width: 100%; height: 200px; overflow: hidden; background: var(--linen-d); }
+.dk-email-img { width: 100%; height: 200px; overflow: hidden; background: var(--linen-d); position: relative; cursor: zoom-in; }
 .dk-email-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.dk-email-img::after { content: ''; position: absolute; inset: 0; background: rgba(11,22,40,0); transition: background 0.2s; pointer-events: none; }
+.dk-email-card:hover .dk-email-img::after { background: rgba(11,22,40,0.12); }
 .dk-email-body { padding: 22px; display: flex; flex-direction: column; flex: 1; }
 .dk-email-cat { font-size: 0.5rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; font-family: 'DM Mono', monospace; }
 .dk-email-card h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.4; }
@@ -225,8 +227,8 @@ h2 em { font-style: italic; color: var(--gold); }
 /* ── PLATFORM CARDS ───────────────────────────────────────────────────────── */
 .platform-card { display: block; background: var(--white); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.2s, transform 0.22s, box-shadow 0.22s; color: inherit; text-decoration: none; }
 .platform-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(184,145,42,0.12); }
-.platform-mock { background: var(--linen-d); height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.platform-mock img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.platform-mock { background: var(--linen-d); height: 200px; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; }
+.platform-mock > img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
 .platform-mock-inner { width: 70%; height: 70%; background: var(--white); border: 1px solid var(--border-m); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
 .platform-mock-txt { font-family: 'Cormorant Garamond', serif; font-size: 13px; color: var(--navy-mid); font-style: italic; }
 .platform-body { padding: 22px; }
@@ -603,7 +605,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </a>
       <a class="platform-card" href="https://agents.property.ca" target="_blank" rel="noopener">
-        <div class="platform-mock"><img src="/images/web-agents-property-ca.jpg" alt="agents.property.ca screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>agents.property.ca</div></div>'"></div>
+        <div class="platform-mock"><img src="/images/web-agents-property-ca.jpg" alt="agents.property.ca screenshot" style="transform:scale(1.35);transform-origin:top center;" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>agents.property.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">B2B Agent Recruitment</div>
           <h3>agents.property.ca</h3>
@@ -614,7 +616,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </a>
       <a class="platform-card" href="https://hq.property.ca" target="_blank" rel="noopener">
-        <div class="platform-mock"><img src="/images/web-hq-property-ca.jpg" alt="hq.property.ca screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>hq.property.ca</div></div>'"></div>
+        <div class="platform-mock"><img src="/images/web-hq-property-ca.jpg" alt="hq.property.ca screenshot" style="transform:scale(1.35);transform-origin:top center;" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>hq.property.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">B2B Brand Platform</div>
           <h3>hq.property.ca</h3>
@@ -854,12 +856,12 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </div>
       <div class="card">
-        <div class="card-mock"><img src="/images/sm-buyer-search.jpg" alt="" style="object-position: center -79px;" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>Help Narrow<br>Your Search</div></div>'"></div>
+        <div class="card-mock"><img src="/images/sm-market-report.jpg" alt="" style="object-position: center top;" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>Seller<br>Evaluation Tool</div></div>'"></div>
         <div class="card-body">
-          <div class="card-cat">Education · Buyer · Carousel</div>
-          <h3>Buyer Search Tips Carousel</h3>
-          <p class="card-desc">Multi-slide buyer education carousel guiding first-time buyers through the home purchase process — from mortgage pre-approval to search criteria, driving platform engagement and qualified lead capture.</p>
-          <div class="card-obj">Objective: <strong>Buyer engagement &amp; lead generation</strong></div>
+          <div class="card-cat">Product · Seller Tool · New Launch</div>
+          <h3>Seller Home Evaluation Tool</h3>
+          <p class="card-desc">Announcing the new Seller Evaluation Tool — now live on the website. Sellers can instantly estimate their home's market value, review comparable sales, and explore listing strategies. Read more about all features and usage instructions on the blog.</p>
+          <div class="card-obj">Objective: <strong>Platform feature adoption &amp; seller lead generation</strong></div>
         </div>
       </div>
     </div>
@@ -886,7 +888,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
 
     <div class="grid-3">
       <div class="dk-email-card">
-        <div class="dk-email-img"><img src="/images/email-re-engagement.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-img"><img src="/images/email-re-engagement.jpg" alt="" style="object-position: 50% 18px;" onerror="this.style.display='none'"></div>
         <div class="dk-email-body">
           <div class="dk-email-cat">Email · Customer Retention</div>
           <h3>Customer Re-Engagement Campaign</h3>
