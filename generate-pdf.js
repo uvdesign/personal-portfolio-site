@@ -18,6 +18,7 @@ const IMAGES = [
   'email-agent-bulletin.jpg', 'email-precon-vp.jpg', 'email-listing-alert.jpg',
   'print-listing-brochure.jpg', 'print-agent-brand-package.jpg', 'print-market-report.jpg',
   'landing-not-2021-market.jpg', 'landing-homebound-seminar.jpg', 'landing-precon-east-mall.jpg',
+  'landing-app-launch.jpg', 'landing-join-brokerage.jpg', 'landing-investor-rental.jpg',
 ];
 
 async function createThumbs() {
