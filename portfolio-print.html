@@ -374,6 +374,8 @@ h2 em { font-style: italic; color: var(--gold-bright); }
 .ci-lg   { height: 185px; }
 .ci-tall { height: 160px; }
 .ci-xl   { height: 250px; }
+.ci-full { height: auto; overflow: visible; }
+.ci-full img { width: 100%; height: auto; object-fit: initial; display: block; }
 
 /* Card head */
 .card-head {
@@ -520,7 +522,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
     <div class="cover-contact">
       <div class="cover-contact-item">
         <div class="cover-contact-label">Email</div>
-        <div class="cover-contact-value">ulyana.viktyuk@gmail.com</div>
+        <div class="cover-contact-value"><a href="mailto:ulyana.viktyuk@gmail.com" style="color:inherit;text-decoration:none;">ulyana.viktyuk@gmail.com</a></div>
       </div>
       <div class="cover-contact-item">
         <div class="cover-contact-label">Phone</div>
@@ -528,11 +530,11 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
       <div class="cover-contact-item">
         <div class="cover-contact-label">LinkedIn</div>
-        <div class="cover-contact-value">linkedin.com/in/ulyanaviktyuk</div>
+        <div class="cover-contact-value"><a href="https://linkedin.com/in/ulyanaviktyuk" style="color:inherit;text-decoration:none;">linkedin.com/in/ulyanaviktyuk</a></div>
       </div>
       <div class="cover-contact-item">
         <div class="cover-contact-label">Portfolio</div>
-        <div class="cover-contact-value">uvportfolio.com</div>
+        <div class="cover-contact-value"><a href="https://uvportfolio.com" style="color:inherit;text-decoration:none;">uvportfolio.com</a></div>
       </div>
     </div>
   </div>
@@ -738,7 +740,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
 
   <div class="card-grid cols-3">
     <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/sm-listing-harbourfront.jpg" alt="Luxury Property Highlight"></div>
+      <div class="card-img ci-md"><img src="./public/images/sm-listing-harbourfront.jpg" alt="Luxury Property Highlight" style="object-position:center center;"></div>
       <div class="card-head">
         <div class="card-cat">Property · Featured Listing</div>
         <h3>Luxury Property Highlight</h3>
@@ -749,7 +751,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/sm-editorial-story.jpg" alt="Every Room Has a Story" style="object-position:center -40px;"></div>
+      <div class="card-img ci-md"><img src="./public/images/sm-editorial-story.jpg" alt="Every Room Has a Story" style="object-position:center center;"></div>
       <div class="card-head">
         <div class="card-cat">Property · Brand Storytelling</div>
         <h3>"Every Room Has a Story"</h3>
@@ -760,7 +762,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/sm-agent-recruitment.jpg" alt="Agent Recruitment" style="object-position:center -15px;"></div>
+      <div class="card-img ci-md"><img src="./public/images/sm-agent-recruitment.jpg" alt="Agent Recruitment" style="object-position:center center;"></div>
       <div class="card-head">
         <div class="card-cat">Agent · Recruitment Campaign</div>
         <h3>Agent Recruitment Campaign</h3>
@@ -771,7 +773,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/sm-precon-cove.jpg" alt="Pre-Con Campaign" style="object-position:center -10px;"></div>
+      <div class="card-img ci-md"><img src="./public/images/sm-precon-cove.jpg" alt="Pre-Con Campaign" style="object-position:center center;"></div>
       <div class="card-head">
         <div class="card-cat">Pre-Construction · Development</div>
         <h3>Pre-Con Development Campaign</h3>
@@ -793,7 +795,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/sm-mortgage-renewals.jpg" alt="Mortgage Renewal Education" style="object-position:center -10px;"></div>
+      <div class="card-img ci-md"><img src="./public/images/sm-mortgage-renewals.jpg" alt="Mortgage Renewal Education" style="object-position:center center;"></div>
       <div class="card-head">
         <div class="card-cat">Education · Financial · Carousel</div>
         <h3>Mortgage Renewal Education</h3>
@@ -801,6 +803,39 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       <div class="card-body">
         <p class="card-desc">Educational carousel covering renewal timing, rate projections, and payment impact — driving mortgage consultations.</p>
         <div class="card-obj">Objective: <strong>Audience education &amp; mortgage lead generation</strong></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img ci-md"><img src="./public/images/sm-market-report.jpg" alt="Toronto Condo Market Snapshot" style="object-position:center center;"></div>
+      <div class="card-head">
+        <div class="card-cat">Property · Market Data</div>
+        <h3>Toronto Condo Market Snapshot</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">Data-driven market intelligence posts positioning the platforms as the authoritative source for Toronto real estate — driving visits and newsletter sign-ups.</p>
+        <div class="card-obj">Objective: <strong>Establish authority &amp; drive platform visits</strong></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img ci-md"><img src="./public/images/sm-holiday.jpg" alt="Holiday Season Campaign" style="object-position:center center;"></div>
+      <div class="card-head">
+        <div class="card-cat">Seasonal · Holiday</div>
+        <h3>Holiday Season Campaign</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">Seasonal storytelling spanning Thanksgiving through New Year's — festive property features, agent highlights, and end-of-year market reflections.</p>
+        <div class="card-obj">Objective: <strong>Brand affinity &amp; seasonal engagement</strong></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img ci-md"><img src="./public/images/sm-buyer-search.jpg" alt="Seller Home Evaluation Tool" style="object-position:center center;"></div>
+      <div class="card-head">
+        <div class="card-cat">Product · Seller Tool · New Launch</div>
+        <h3>Seller Home Evaluation Tool</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">New Seller Evaluation Tool launch — announcing instant home value estimates, comparable sales, and listing strategy tools now live on the website.</p>
+        <div class="card-obj">Objective: <strong>Feature adoption &amp; seller lead generation</strong></div>
       </div>
     </div>
   </div>
@@ -844,7 +879,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
   <!-- 3-col newsletter miniatures -->
   <div class="card-grid cols-3">
     <div class="card">
-      <div class="card-img ci-sm"><img src="./public/images/email-re-engagement.jpg" alt="Re-Engagement Campaign" style="object-position:top center;"></div>
+      <div class="card-img ci-md"><img src="./public/images/email-re-engagement.jpg" alt="Re-Engagement Campaign" style="object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Customer Retention</div>
         <h3>Customer Re-Engagement</h3>
@@ -855,7 +890,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-sm"><img src="./public/images/email-listings-newsletter.jpg" alt="Listings Newsletter" style="object-position:top center;"></div>
+      <div class="card-img ci-md"><img src="./public/images/email-listings-newsletter.jpg" alt="Listings Newsletter" style="object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Property Newsletter</div>
         <h3>Featured Listings Newsletter</h3>
@@ -866,7 +901,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-sm"><img src="./public/images/email-market-report.jpg" alt="Market Report" style="object-position:top center;"></div>
+      <div class="card-img ci-md"><img src="./public/images/email-market-report.jpg" alt="Market Report" style="object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Market Intelligence</div>
         <h3>Monthly Market Report</h3>
@@ -877,7 +912,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-sm"><img src="./public/images/email-agent-bulletin.jpg" alt="Agent Newsletter" style="object-position:top center;"></div>
+      <div class="card-img ci-md"><img src="./public/images/email-agent-bulletin.jpg" alt="Agent Newsletter" style="object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Agent Communications</div>
         <h3>Agent Weekly Newsletter</h3>
@@ -888,7 +923,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-sm"><img src="./public/images/email-precon-vp.jpg" alt="Pre-Con Value Proposition" style="object-position:top center;"></div>
+      <div class="card-img ci-md"><img src="./public/images/email-precon-vp.jpg" alt="Pre-Con Value Proposition" style="object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Pre-Construction</div>
         <h3>Pre-Con Value Proposition</h3>
@@ -899,7 +934,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-sm"><img src="./public/images/email-listing-alert.jpg" alt="Listing Alert" style="object-position:top center;"></div>
+      <div class="card-img ci-md"><img src="./public/images/email-listing-alert.jpg" alt="Listing Alert" style="object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Automated Lifecycle</div>
         <h3>Listing Alert — Automated</h3>
@@ -982,36 +1017,36 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/sm-listing-harbourfront.jpg" alt="Luxury Listing Campaign"></div>
+      <div class="card-img ci-md"><img src="./public/images/landing-not-2021-market.jpg" alt="Seller Acquisition Campaign" style="object-position:top center;"></div>
       <div class="card-head">
-        <div class="card-cat">Campaign · Luxury · Multi-Channel</div>
-        <h3>Luxury Listing Launch Campaign</h3>
+        <div class="card-cat">Campaign · Seller Acquisition · Multi-Channel</div>
+        <h3>Seller Acquisition Campaign</h3>
       </div>
       <div class="card-body">
-        <p class="card-desc">Integrated campaign spanning social, email, and print — editorial photography, property storytelling, and targeted distribution to qualified buyer audiences.</p>
-        <div class="card-obj">Objective: <strong>Listing visibility &amp; premium buyer engagement</strong></div>
+        <p class="card-desc">Integrated campaign spanning social, email, and landing page — market context framing, social proof, and multi-step form flow driving seller lead generation.</p>
+        <div class="card-obj">Objective: <strong>Seller lead generation &amp; listing acquisition</strong></div>
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/sm-precon-cove.jpg" alt="Pre-Con Multi-Channel Launch" style="object-position:center -10px;"></div>
+      <div class="card-img ci-md"><img src="./public/images/landing-homebound-seminar.jpg" alt="FTB Seminar Multi-Channel" style="object-position:top center;"></div>
       <div class="card-head">
-        <div class="card-cat">Campaign · Pre-Construction · Launch</div>
+        <div class="card-cat">Campaign · FTB · Event · Multi-Channel</div>
+        <h3>FTB HomeBound Seminar Campaign</h3>
+      </div>
+      <div class="card-body">
+        <p class="card-desc">Full-funnel FTB seminar campaign — social promotion, email nurture sequences, landing page registration, and post-event follow-up driving attendance and buyer pipeline.</p>
+        <div class="card-obj">Objective: <strong>Event attendance &amp; FTB buyer lead capture</strong></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img ci-md"><img src="./public/images/landing-precon-east-mall.jpg" alt="Pre-Con Multi-Channel Launch" style="object-position:top center;"></div>
+      <div class="card-head">
+        <div class="card-cat">Campaign · Pre-Construction · Multi-Channel</div>
         <h3>Pre-Con Multi-Channel Launch</h3>
       </div>
       <div class="card-body">
-        <p class="card-desc">Full-funnel pre-con launch — social teaser, VIP email sequence, landing page, agent tools, and print collateral driving registrations and warm pipeline.</p>
+        <p class="card-desc">Full-funnel pre-con launch — social teaser, VIP email sequence, agent-personalised landing page, and print collateral driving registrations and warm pipeline.</p>
         <div class="card-obj">Objective: <strong>Pre-con lead generation &amp; developer partnership</strong></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-img ci-md"><img src="./public/images/email-market-report.jpg" alt="Market Intelligence Campaign" style="object-position:top center;"></div>
-      <div class="card-head">
-        <div class="card-cat">Campaign · B2B · Market Intelligence</div>
-        <h3>Market Intelligence Campaign</h3>
-      </div>
-      <div class="card-body">
-        <p class="card-desc">Integrated B2B campaign — printed quarterly report, email distribution to agents and buyers, and social amplification positioning Condos.ca as the authority.</p>
-        <div class="card-obj">Objective: <strong>Brand authority &amp; agent/buyer retention</strong></div>
       </div>
     </div>
   </div>
@@ -1056,7 +1091,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
 
   <div class="card-grid cols-3">
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/landing-not-2021-market.jpg" alt="Not the 2021 Market" style="object-position:top center;"></div>
+      <div class="card-img ci-full"><img src="./public/images/landing-not-2021-market.jpg" alt="Not the 2021 Market"></div>
       <div class="card-head">
         <div class="card-cat">Landing Page · Seller Acquisition</div>
         <h3>"Not the 2021 Market"</h3>
@@ -1067,7 +1102,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/landing-homebound-seminar.jpg" alt="HomeBound Seminar" style="object-position:top center;"></div>
+      <div class="card-img ci-full"><img src="./public/images/landing-homebound-seminar.jpg" alt="HomeBound Seminar"></div>
       <div class="card-head">
         <div class="card-cat">Landing Page · Event Registration</div>
         <h3>HomeBound Buyer Seminar</h3>
@@ -1078,7 +1113,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/landing-precon-east-mall.jpg" alt="Pre-Con Agent Page" style="object-position:top center;"></div>
+      <div class="card-img ci-full"><img src="./public/images/landing-precon-east-mall.jpg" alt="Pre-Con Agent Page"></div>
       <div class="card-head">
         <div class="card-cat">Landing Page · Pre-Con · Agent Personalised</div>
         <h3>Pre-Con Agent-Personalised Page</h3>
@@ -1147,7 +1182,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
   <div style="border-top:1px solid var(--border);padding-top:22px;">
     <div class="mini-sec-tag" style="margin-bottom:10px;">Contact</div>
     <div style="font-size:9px;color:var(--slate);line-height:2.6;font-weight:300;">
-      ulyana.viktyuk@gmail.com &nbsp;·&nbsp; 416-720-8886 &nbsp;·&nbsp; linkedin.com/in/ulyanaviktyuk &nbsp;·&nbsp; uvportfolio.com
+      <a href="mailto:ulyana.viktyuk@gmail.com" style="color:inherit;text-decoration:none;">ulyana.viktyuk@gmail.com</a> &nbsp;·&nbsp; 416-720-8886 &nbsp;·&nbsp; <a href="https://linkedin.com/in/ulyanaviktyuk" style="color:inherit;text-decoration:none;">linkedin.com/in/ulyanaviktyuk</a> &nbsp;·&nbsp; <a href="https://uvportfolio.com" style="color:inherit;text-decoration:none;">uvportfolio.com</a>
     </div>
   </div>
 </div>
