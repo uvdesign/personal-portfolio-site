@@ -181,7 +181,7 @@ h2 em { font-style: italic; color: var(--gold); }
 .dk-email-cat { font-size: 0.5rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; font-family: 'DM Mono', monospace; }
 .dk-email-card h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.4; }
 .dk-email-card p { font-size: 0.82rem; color: var(--slate); line-height: 1.7; }
-.dk-email-obj { margin-top: 12px; font-size: 0.76rem; color: var(--mist); }
+.dk-email-obj { margin-top: 12px; font-size: 0.76rem; color: var(--mist); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .dk-email-obj span { color: var(--gold); font-weight: 500; }
 
 /* ── AB TESTING ───────────────────────────────────────────────────────────── */
@@ -605,7 +605,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </a>
       <a class="platform-card" href="https://agents.property.ca" target="_blank" rel="noopener">
-        <div class="platform-mock"><img src="/images/web-agents-property-ca.jpg" alt="agents.property.ca screenshot" style="transform:scale(1.35);transform-origin:top center;" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>agents.property.ca</div></div>'"></div>
+        <div class="platform-mock"><img src="/images/web-agents-property-ca.jpg" alt="agents.property.ca screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>agents.property.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">B2B Agent Recruitment</div>
           <h3>agents.property.ca</h3>
@@ -616,7 +616,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </a>
       <a class="platform-card" href="https://hq.property.ca" target="_blank" rel="noopener">
-        <div class="platform-mock"><img src="/images/web-hq-property-ca.jpg" alt="hq.property.ca screenshot" style="transform:scale(1.35);transform-origin:top center;" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>hq.property.ca</div></div>'"></div>
+        <div class="platform-mock"><img src="/images/web-hq-property-ca.jpg" alt="hq.property.ca screenshot" onerror="this.parentElement.innerHTML='<div class=\'platform-mock-inner\'><div class=\'platform-mock-txt\'>hq.property.ca</div></div>'"></div>
         <div class="platform-body">
           <div class="platform-type">B2B Brand Platform</div>
           <h3>hq.property.ca</h3>
@@ -738,7 +738,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </div>
       <div class="card">
-        <div class="card-mock gold-bg"><img src="/images/sm-market-report.jpg" alt="" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>Market Report<br>$758/sqft · Q1 2025</div></div>'"></div>
+        <div class="card-mock gold-bg"><img src="/images/sm-market-report.jpg" alt="" style="object-position: center -80px;" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>Market Report<br>$758/sqft · Q1 2025</div></div>'"></div>
         <div class="card-body">
           <div class="card-cat">Property · Market Data</div>
           <h3>Toronto Condo Market Snapshot</h3>
@@ -810,7 +810,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </div>
       <div class="card">
-        <div class="card-mock"><img src="/images/sm-features-launch.jpg" alt="" style="object-position: center -23px;" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>New Feature<br>Launch</div></div>'"></div>
+        <div class="card-mock"><img src="/images/sm-features-launch.jpg" alt="" style="object-position: center -68px;" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>New Feature<br>Launch</div></div>'"></div>
         <div class="card-body">
           <div class="card-cat">Product · Feature Launch</div>
           <h3>Website Feature Launch</h3>
@@ -856,7 +856,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </div>
       <div class="card">
-        <div class="card-mock"><img src="/images/sm-market-report.jpg" alt="" style="object-position: center top;" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>Seller<br>Evaluation Tool</div></div>'"></div>
+        <div class="card-mock"><img src="/images/sm-buyer-search.jpg" alt="" style="object-position: center -55px;" onerror="this.outerHTML='<div class=\'card-mock-inner\'><div class=\'card-mock-txt\'>Seller<br>Evaluation Tool</div></div>'"></div>
         <div class="card-body">
           <div class="card-cat">Product · Seller Tool · New Launch</div>
           <h3>Seller Home Evaluation Tool</h3>
@@ -888,7 +888,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
 
     <div class="grid-3">
       <div class="dk-email-card">
-        <div class="dk-email-img"><img src="/images/email-re-engagement.jpg" alt="" style="object-position: 50% 18px;" onerror="this.style.display='none'"></div>
+        <div class="dk-email-img"><img src="/images/email-re-engagement.jpg" alt="" style="object-position: 50% 1px;" onerror="this.style.display='none'"></div>
         <div class="dk-email-body">
           <div class="dk-email-cat">Email · Customer Retention</div>
           <h3>Customer Re-Engagement Campaign</h3>
@@ -897,7 +897,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-img"><img src="/images/email-listings-newsletter.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="dk-email-img"><img src="/images/email-listings-newsletter.jpg" alt="" style="object-position: center top;" onerror="this.style.display='none'"></div>
         <div class="dk-email-body">
           <div class="dk-email-cat">Email · Property Newsletter</div>
           <h3>Featured Listings Newsletter</h3>
@@ -938,7 +938,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
           <div class="dk-email-cat">Email · Event · First-Time Buyer Seminar</div>
           <h3>FTB Seminar — Attendance Reminder</h3>
           <p>Nurturing reminder series sent to registered first-time buyer seminar attendees — featuring confirmed speaker profiles, venue map, session date and time, and agenda highlights to maximise attendance and reduce drop-off before the event.</p>
-          <div class="dk-email-obj">Objective: <span>Event attendance &amp; first-time buyer engagement</span></div>
+          <div class="dk-email-obj">Objective: <span>Event attendance &amp; FTB engagement</span></div>
         </div>
       </div>
       <div class="dk-email-card">
@@ -946,7 +946,7 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         <div class="dk-email-body">
           <div class="dk-email-cat">Email · Seasonal Campaign</div>
           <h3>Holiday Season Campaign</h3>
-          <p>Branded seasonal send maintaining touchpoint during the holiday period — warm, editorial tone reinforcing brand affinity across all segments.</p>
+          <p>Branded seasonal send maintaining touchpoint during the holiday period — warm, editorial tone reinforcing brand affinity across all segments. Covers Thanksgiving, winter market wrap-up, and New Year messaging with curated property features and agent spotlights.</p>
           <div class="dk-email-obj">Objective: <span>Brand awareness &amp; engagement</span></div>
         </div>
       </div>
@@ -955,17 +955,17 @@ footer { background: var(--navy); padding: 3rem 3.5rem; display: grid; grid-temp
         <div class="dk-email-body">
           <div class="dk-email-cat">Email · Automated Lifecycle</div>
           <h3>Listing Alert — Automated</h3>
-          <p>Behaviour-triggered alert emails serving personalised listing matches — highest-engagement email type, driving repeat platform visits and conversion.</p>
+          <p>Behaviour-triggered alert emails serving personalised listing matches — highest-engagement email type, driving repeat platform visits and conversion. Triggered by saved search criteria, price drops, and new inventory matching buyer preferences across all segments.</p>
           <div class="dk-email-obj">Objective: <span>Re-engagement &amp; conversion</span></div>
         </div>
       </div>
       <div class="dk-email-card">
-        <div class="dk-email-img"><img src="/images/email-re-engagement.jpg" alt="" style="object-position: 50% 18px;" onerror="this.style.display='none'"></div>
+        <div class="dk-email-img"><img src="/images/email-users-bulletin.jpg" alt="" onerror="this.style.display='none'"></div>
         <div class="dk-email-body">
           <div class="dk-email-cat">Email · Nurture · Lead Re-Engagement</div>
           <h3>Rental Preference Nurture — Next Steps</h3>
           <p>Re-engagement series for lapsed users — asking targeted questions to surface intent, prompting updates to rental preferences and saved search criteria, and guiding users through clear next steps. CTA: Book a discovery call with an agent to move forward.</p>
-          <div class="dk-email-obj">Objective: <span>Lead re-engagement &amp; agent booking conversion</span></div>
+          <div class="dk-email-obj">Objective: <span>Lead re-engagement &amp; agent booking</span></div>
         </div>
       </div>
       <div class="dk-email-card">
