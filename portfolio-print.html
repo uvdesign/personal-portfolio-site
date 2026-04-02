@@ -36,13 +36,14 @@ body {
 /* ── PAGE ─────────────────────────────────────────────────────────────────── */
 .page {
   width: 210mm;
-  min-height: 297mm;
+  height: 297mm;
   position: relative;
   overflow: hidden;
   page-break-after: always;
+  break-after: page;
   background: white;
 }
-.page:last-child { page-break-after: avoid; }
+.page:last-child { page-break-after: avoid; break-after: avoid; }
 
 /* ══════════════════════════════════════════════════════════════════════════ */
 /* COVER PAGE */
@@ -1088,7 +1089,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
 
   <div class="card-grid cols-3">
     <div class="card">
-      <div class="card-img ci-full"><img src="./public/images/landing-app-launch.jpg" alt="Condos.ca App Launch"></div>
+      <div class="card-img ci-full" style="height:500px; overflow:hidden;"><img src="./public/images/landing-app-launch.jpg" alt="Condos.ca App Launch" style="width:100%; height:100%; object-fit:cover; object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Landing Page · App Launch</div>
         <h3>Condos.ca App Launch</h3>
@@ -1099,7 +1100,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-full"><img src="./public/images/landing-join-brokerage.jpg" alt="Agent Recruitment Page"></div>
+      <div class="card-img ci-full" style="height:500px; overflow:hidden;"><img src="./public/images/landing-join-brokerage.jpg" alt="Agent Recruitment Page" style="width:100%; height:100%; object-fit:cover; object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Landing Page · Agent Recruitment</div>
         <h3>Agent Recruitment Page</h3>
@@ -1110,7 +1111,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-full"><img src="./public/images/landing-investor-rental.jpg" alt="Post-Purchase Investor Nurturing"></div>
+      <div class="card-img ci-full" style="height:500px; overflow:hidden;"><img src="./public/images/landing-investor-rental.jpg" alt="Post-Purchase Investor Nurturing" style="width:100%; height:100%; object-fit:cover; object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Landing Page · Investor Re-Engagement</div>
         <h3>Post-Purchase Investor Nurturing</h3>
