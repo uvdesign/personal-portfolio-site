@@ -281,6 +281,8 @@ h2 em { font-style: italic; color: var(--gold-bright); }
 .stat-cell {
   background: var(--linen);
   padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
 }
 .stat-num {
   font-family: 'Cormorant Garamond', serif;
@@ -290,6 +292,7 @@ h2 em { font-style: italic; color: var(--gold-bright); }
   line-height: 1;
   margin-bottom: 5px;
   letter-spacing: -0.01em;
+  order: 2;
 }
 .stat-num em { font-style: normal; color: var(--gold-bright); font-size: 0.65em; }
 .stat-label {
@@ -299,6 +302,7 @@ h2 em { font-style: italic; color: var(--gold-bright); }
   text-transform: uppercase;
   color: var(--slate);
   margin-bottom: 6px;
+  order: 1;
 }
 .stat-sub {
   font-size: 7px;
@@ -307,6 +311,7 @@ h2 em { font-style: italic; color: var(--gold-bright); }
   border-top: 1px solid var(--border-m);
   padding-top: 6px;
   margin-top: 4px;
+  order: 3;
 }
 
 /* KPI grid — impact page */
@@ -744,7 +749,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
 
   <div class="card-grid cols-3">
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/sm-listing-harbourfront.jpg" alt="Luxury Property Highlight" style="object-position:center -45px;"></div>
+      <div class="card-img ci-xl"><img src="./public/images/sm-listing-harbourfront.jpg" alt="Luxury Property Highlight" style="object-position:center bottom;"></div>
       <div class="card-head">
         <div class="card-cat">Property · Featured Listing</div>
         <h3>Luxury Property Highlight</h3>
@@ -755,7 +760,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/sm-editorial-story.jpg" alt="Every Room Has a Story" style="object-position:center -45px;"></div>
+      <div class="card-img ci-xl"><img src="./public/images/sm-editorial-story.jpg" alt="Every Room Has a Story" style="object-position:center bottom;"></div>
       <div class="card-head">
         <div class="card-cat">Property · Brand Storytelling</div>
         <h3>"Every Room Has a Story"</h3>
@@ -766,7 +771,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/sm-agent-recruitment.jpg" alt="Agent Recruitment" style="object-position:center -45px;"></div>
+      <div class="card-img ci-xl"><img src="./public/images/sm-agent-recruitment.jpg" alt="Agent Recruitment" style="object-position:center bottom;"></div>
       <div class="card-head">
         <div class="card-cat">Agent · Recruitment Campaign</div>
         <h3>Agent Recruitment Campaign</h3>
@@ -777,7 +782,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/sm-precon-cove.jpg" alt="Pre-Con Campaign" style="object-position:center -45px;"></div>
+      <div class="card-img ci-xl"><img src="./public/images/sm-precon-cove.jpg" alt="Pre-Con Campaign" style="object-position:center bottom;"></div>
       <div class="card-head">
         <div class="card-cat">Pre-Construction · Development</div>
         <h3>Pre-Con Development Campaign</h3>
@@ -788,7 +793,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/sm-features-launch.jpg" alt="Feature Launch" style="object-position:center -45px;"></div>
+      <div class="card-img ci-xl"><img src="./public/images/sm-features-launch.jpg" alt="Feature Launch" style="object-position:center bottom;"></div>
       <div class="card-head">
         <div class="card-cat">Product · Feature Launch</div>
         <h3>Website Feature Launch</h3>
@@ -799,7 +804,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-xl"><img src="./public/images/sm-mortgage-renewals.jpg" alt="Mortgage Renewal Education" style="object-position:center -45px;"></div>
+      <div class="card-img ci-xl"><img src="./public/images/sm-mortgage-renewals.jpg" alt="Mortgage Renewal Education" style="object-position:center bottom;"></div>
       <div class="card-head">
         <div class="card-cat">Education · Financial · Carousel</div>
         <h3>Mortgage Renewal Education</h3>
