@@ -16,8 +16,9 @@ const IMAGES = [
   'sm-market-report.jpg', 'sm-holiday.jpg', 'sm-buyer-search.jpg',
   'email-re-engagement.jpg', 'email-listings-newsletter.jpg', 'email-market-report.jpg',
   'email-agent-bulletin.jpg', 'email-precon-vp.jpg', 'email-listing-alert.jpg',
+  'email-agent-personalised.jpg', 'email-recruitment-newsletter.jpg',
   'print-listing-brochure.jpg', 'print-agent-brand-package.jpg', 'print-market-report.jpg',
-  'landing-not-2021-market.jpg', 'landing-homebound-seminar.jpg', 'landing-precon-east-mall.jpg',
+  'print-direct-mail.jpg', 'print-seller-guide.jpg', 'print-recruitment-brochure.jpg',
   'landing-app-launch.jpg', 'landing-join-brokerage.jpg', 'landing-investor-rental.jpg',
 ];
 
