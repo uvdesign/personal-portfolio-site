@@ -98,7 +98,7 @@ body {
 
 .cover h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 78px;
+  font-size: 66px;
   font-weight: 300;
   color: #ffffff;
   line-height: 0.95;
@@ -364,6 +364,8 @@ h2 em { font-style: italic; color: var(--gold-bright); }
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 /* Image areas */
@@ -930,11 +932,9 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
     <div class="page-name">Ulyana Viktyuk · uvportfolio.com</div>
   </div>
 
-  <div class="lead">Full-length email renders showcasing design depth, personalisation architecture, and lifecycle strategy — from agent-facing communications to onboarding flows and individually tailored newsletters. Each template built for scalability, brand consistency, and measurable engagement outcomes.</div>
-
   <div class="card-grid cols-3">
     <div class="card">
-      <div class="card-img ci-full"><img src="./public/images/email-agent-bulletin.jpg" alt="Agent Weekly Newsletter"></div>
+      <div class="card-img ci-full" style="max-height:790px; overflow:hidden;"><img src="./public/images/email-agent-bulletin.jpg" alt="Agent Weekly Newsletter" style="object-fit:cover; object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Agent Communications</div>
         <h3>Agent Weekly Newsletter</h3>
@@ -945,7 +945,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-full"><img src="./public/images/email-agent-personalised.jpg" alt="Agent Personalised Newsletter"></div>
+      <div class="card-img ci-full" style="max-height:790px; overflow:hidden;"><img src="./public/images/email-agent-personalised.jpg" alt="Agent Personalised Newsletter" style="object-fit:cover; object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Agent · Personalised</div>
         <h3>Agent Personalised Newsletter</h3>
@@ -956,7 +956,7 @@ h3.sub-h em { font-style: italic; color: var(--gold-bright); }
       </div>
     </div>
     <div class="card">
-      <div class="card-img ci-full"><img src="./public/images/email-recruitment-newsletter.jpg" alt="Welcome &amp; Profile Completion"></div>
+      <div class="card-img ci-full" style="max-height:790px; overflow:hidden;"><img src="./public/images/email-recruitment-newsletter.jpg" alt="Welcome &amp; Profile Completion" style="object-fit:cover; object-position:top center;"></div>
       <div class="card-head">
         <div class="card-cat">Email · Welcome · Onboarding Series</div>
         <h3>Welcome &amp; Profile Completion</h3>
