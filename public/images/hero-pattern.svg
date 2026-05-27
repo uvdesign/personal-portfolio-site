@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <rect width="200" height="200" fill="#0d1b35"/>
+  <path d="M100 2 L2 100 L100 198 L198 100 Z" fill="none" stroke="#1e3060" stroke-width="1.4"/>
+  <path d="M100 27 L27 100 L100 173 L173 100 Z" fill="none" stroke="#1e3060" stroke-width="1.4"/>
+  <path d="M100 52 L52 100 L100 148 L148 100 Z" fill="none" stroke="#1e3060" stroke-width="1.4"/>
+  <path d="M100 77 L77 100 L100 123 L123 100 Z" fill="none" stroke="#1e3060" stroke-width="1.4"/>
+</svg>
